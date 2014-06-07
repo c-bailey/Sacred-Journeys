@@ -89,3 +89,11 @@ body {
 footer {
 	background-color: #fff;
 }
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
