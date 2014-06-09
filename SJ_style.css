@@ -13,19 +13,38 @@ body {
 	background-color: #fff;
 }
 
-#topContainer {
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #444;
-	padding: 0;
+.topContainer {
+
 }
 
-#video {
-	float: left;
-	margin-left: 25px;
-	max-width: 750px;
+.videoContainer {
+	height: 0;
+	padding-top: 25px;
+	padding-bottom: 67.5%;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
 }
+
+.videoContainer iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*.cove-box {
+  overflow: hidden; /*responsive video
+  padding-bottom: 56%;
+}
+
+.cove-box.allowshare {
+  padding-bottom: 70%; /*fallback when calc is not supported
+  padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!
+  padding-bottom: calc(56% + 41px);
+}*/
 
 
 /*All add-block css below*/
@@ -77,6 +96,8 @@ body {
 .details {
 	position: relative;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .main {
