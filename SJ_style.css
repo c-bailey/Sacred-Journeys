@@ -43,7 +43,8 @@ body {
 }
 
 #add-block {
-	position: static;
+	position: relative;
+	float: right;
 	margin: 0 auto;
 }
 
