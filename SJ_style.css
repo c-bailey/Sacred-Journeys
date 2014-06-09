@@ -42,20 +42,21 @@ body {
 
 #grid {
 	position: relative;
-	width: 600px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 #grid IMG {
 	position: relative;
-	width: 150px;
+	width: 100%;
 	height: auto;
 }
 
 .cell {
 	float: left;
-	width: 33.33333%
+	width: 31.333%;
+	padding: 1%;
 }
 
 #grid2 {
