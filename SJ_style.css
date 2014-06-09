@@ -19,6 +19,7 @@ body {
 }
 
 .videoContainer {
+	margin-left: 15px;
 	height: 0;
 	padding-top: 25px;
 	padding-bottom: 67.5%;
@@ -26,6 +27,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	width: calc(100% - 400px);
+	display: inline-block;
 }
 
 .videoContainer iframe{
@@ -65,7 +67,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline; float: left; margin-left: 15px; }
+      .js #add-block-placer { display: inline-block; float: right; margin-right: 15px; }
       .js #add-block { position: absolute; z-index: 1;}
     }
 
