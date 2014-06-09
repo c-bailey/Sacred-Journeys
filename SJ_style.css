@@ -34,11 +34,34 @@ body {
 	margin-left: 25px;
 }
 
-#ad {
-	float: left;
-	background-color: #aaa;
-	color: #fff
+
+/*All add-block css below*/
+
+.article {
+	max-width: 800px;
+	margin: 0 auto;
 }
+
+.add-container {
+	width: 300px;
+	height: 310px;
+}
+
+#add-block {
+	position: static;
+	margin: 0 auto;
+}
+
+#add-block-placer {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+      .js #add-block-placer { display: inline; float: right; margin-left: 15px; }
+      .js #add-block { position: absolute; z-index: 1;}
+    }
+    
+/* end of add-block code*/
 
 #grid {
 	position: relative;
