@@ -75,24 +75,26 @@ body {
 }
 
 .details {
-	padding-top: 5px;
+	position: relative;
 	background-color: #eee;
+	width: 100%;
 }
 
 .main {
 	position: relative;
 	width: 100%;
-	padding-bottom: 1px;
 	z-index: 1;
 }
 
 .sub {
-	position: relative;
+	position: absolute;
+	bottom: 0;
 	z-index: 2;
 }
 
 .subcell {
-	padding: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
 	float:left;
 	width: 30%;
 }
