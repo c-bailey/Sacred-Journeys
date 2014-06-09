@@ -112,6 +112,7 @@ body {
 
 footer {
 	background-color: #fff;
+	width: 100%
 }
 
 ul {
@@ -124,13 +125,14 @@ li {
 
 /* TODO remove repetition */
 
-.footer-right {
+.footercell {
+	position: relative;
+	float: left;
+	width: 30%;
+	padding: 1%;
 }
 
-.produced-by {
-	float: left;
-}
-
-.funding {
-	float: left;
+.footTitle {
+	font-size: 12pt;
+	color: #ddd;
 }
