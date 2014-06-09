@@ -14,7 +14,8 @@ body {
 }
 
 .topContainer {
-
+	width: 100%;
+	position:relative;
 }
 
 .videoContainer {
@@ -24,7 +25,7 @@ body {
 	margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
-	width: 100%;
+	width: calc(100% - 400px);
 }
 
 .videoContainer iframe{
@@ -35,16 +36,16 @@ body {
 	height: 100%;
 }
 
-/*.cove-box {
-  overflow: hidden; /*responsive video
+.cove-box {
+  overflow: hidden; /*responsive video*/
   padding-bottom: 56%;
 }
 
 .cove-box.allowshare {
-  padding-bottom: 70%; /*fallback when calc is not supported
-  padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!
+  padding-bottom: 70%; /*fallback when calc is not supported*/
+  padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!*/
   padding-bottom: calc(56% + 41px);
-}*/
+}
 
 
 /*All add-block css below*/
