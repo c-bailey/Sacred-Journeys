@@ -19,14 +19,15 @@ body {
 }
 
 .videoContainer {
-	margin-left: 15px;
+	margin-left: 1%;
 	height: 0;
 	padding-top: 25px;
 	padding-bottom: 67.5%;
 	margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
-	width: calc(100% - 400px);
+	width: calc(99% - 400px);
+	min-width: 350px;
 	display: inline-block;
 }
 
@@ -67,7 +68,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline-block; float: right; margin-right: 15px; }
+      .js #add-block-placer { display: inline-block; float: right; margin-right: 5px; }
       .js #add-block { position: absolute; z-index: 1;}
     }
 
@@ -109,12 +110,16 @@ body {
 	z-index: 1;
 	opacity: .8;
 	bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .sub {
 	position: absolute;
 	bottom: 0;
 	z-index: 2;
+	margin: 0;
+	padding: 0;
 }
 
 .subcell {
