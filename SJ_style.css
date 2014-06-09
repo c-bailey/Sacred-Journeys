@@ -83,15 +83,19 @@ body {
 	position: relative;
 	width: 100%;
 	padding-bottom: 1px;
-	z-index: 2;
+	z-index: 1;
 }
 
 .sub {
 	position: relative;
+	z-index: 2;
+
+}
+
+.subcell {
 	padding: 1%;
 	float:left;
 	width: 30%;
-	z-index: 3;
 }
 
 .text {
