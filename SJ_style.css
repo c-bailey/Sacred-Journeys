@@ -37,11 +37,6 @@ body {
 
 /*All add-block css below*/
 
-.article {
-	max-width: 800px;
-	margin: 0 auto;
-}
-
 .add-container {
 	width: 300px;
 	height: 310px;
@@ -60,7 +55,7 @@ body {
       .js #add-block-placer { display: inline; float: right; margin-left: 15px; }
       .js #add-block { position: absolute; z-index: 1;}
     }
-    
+
 /* end of add-block code*/
 
 #grid {
