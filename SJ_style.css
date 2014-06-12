@@ -18,6 +18,7 @@ body {
 	width: 2%;
 	height: 30%;
 	background-color: #ddd;
+	opacity: .7;
 	z-index: 10;
 }
 
@@ -90,7 +91,8 @@ body {
 .cell{
 	float: left;
 	width: 31.333%;
-	padding: 1%;
+	margin: 1%;
+	background: #eee;
 }
 
 .cell IMG {
@@ -99,6 +101,7 @@ body {
 	height: auto;
 	overflow: hidden;
 }
+
 
 #grid2 {
 	width: 100%;
@@ -127,12 +130,12 @@ body {
 	z-index: 2;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 5px;
+	margin-bottom: 2%;
 }
 
 .subcell {
-	padding-left: 1%;
-	padding-right: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
 	float:left;
 	width: 30%;
 }
@@ -177,14 +180,16 @@ li {
 }
 
 
-@media only screen and (max-width : 767px) {
-	
+@media only screen and (max-width: 767px) {
 	.videoContainer {
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 650px) {
 
 	.cell {
-		width: 45%;
+		width: 48%;
 	}
 
 	.main {
@@ -197,6 +202,6 @@ li {
 
 	.subcell {
 		width: 100%;
-		padding: 0;
+		margin: 0;
 	}
 }
