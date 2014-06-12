@@ -32,7 +32,7 @@ body {
 	padding-bottom: 68.5%;
 	margin-bottom: 10px;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: calc(99% - 400px);
 	display: inline-block;
 }
@@ -55,14 +55,6 @@ body {
   padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!*/
   padding-bottom: calc(56% + 41px);
 }
-
-.promoDescription {
-	margin-left: 1%;
-	position: relative;
-	float: left;
-	width: calc(99%-400px);
-}
-
 
 /*All add-block css below*/
 
