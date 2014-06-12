@@ -1,11 +1,11 @@
 //Play Video function
 
-var Vid1 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
-var Vid2 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
-var Vid3 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
-var Vid4 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
-var Vid5 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
-var Vid6 = "<iframe src='http://www.youtube.com/embed/CWhBhuX_ZKU?rel=0&autoplay=1' width='640' height='390' allowfullscreen></iframe>"
+var Vid1 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
+var Vid2 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
+var Vid3 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
+var Vid4 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
+var Vid5 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
+var Vid6 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
 
 function playVideo(element,video) {
 	$(element).empty();
