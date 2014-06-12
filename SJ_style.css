@@ -27,7 +27,6 @@ body {
 	position: relative;
 	overflow: hidden;
 	width: calc(99% - 400px);
-	min-width: 350px;
 	display: inline-block;
 }
 
@@ -61,6 +60,7 @@ body {
 #add-block {
 	position: static;
 	margin: 0 auto;
+	display: none;
 }
 
 #add-block-placer {
@@ -69,7 +69,7 @@ body {
 
 @media only screen and (min-width: 768px) {
       .js #add-block-placer { display: inline-block; float: right; margin-right: 5px; }
-      .js #add-block { position: absolute; z-index: 1;}
+      .js #add-block { display: inline-block; position: absolute; z-index: 1;}
     }
 
 /* end of add-block code*/
@@ -172,17 +172,26 @@ li {
 }
 
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 767px) {
 	
-	h2 {
-		color: #ddd;
+	.videoContainer {
+		width: 100%;
 	}
 
 	.cell {
-		width: 50%;
+		width: 45%;
+	}
+
+	.main {
+		display: none;
+	}
+
+	.sub {
+		position: relative;
 	}
 
 	.subcell {
 		width: 100%;
+		padding: 0;
 	}
 }
