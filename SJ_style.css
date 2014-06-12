@@ -13,6 +13,14 @@ body {
 	background-color: #fff;
 }
 
+.topReturn {
+	position: fixed;
+	width: 2%;
+	height: 30%;
+	background-color: #ddd;
+	z-index: 10;
+}
+
 .topContainer {
 	width: 100%;
 	position:relative;
@@ -87,7 +95,7 @@ body {
 	margin-left: auto;
 }
 
-.cell {
+.cell{
 	float: left;
 	width: 31.333%;
 	padding: 1%;
@@ -138,7 +146,6 @@ body {
 }
 
 .text {
-	margin-left: 1%;
 	background-color: #bbb;
 }
 
