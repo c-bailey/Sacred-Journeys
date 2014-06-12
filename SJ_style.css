@@ -97,6 +97,7 @@ body {
 }
 
 .cell{
+	position: relative;
 	float: left;
 	width: 31%;
 	margin: 1%;
@@ -109,8 +110,22 @@ body {
 	height: auto;
 }
 
-.cell IMG:hover {
+.cell:hover IMG {
 	opacity: .8;
+}
+
+.explore {
+	z-index: 3;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 35%;
+	text-align: center;
+	color: #fff;
+	visibility: hidden;
+}
+
+.cell:hover .explore {
+	visibility: visible;
 }
 
 .cell.airdate p {
@@ -159,6 +174,7 @@ body {
 
 .subcell.playable:hover {
 	box-shadow: 5px 5px 2px #888888;
+	opacity: .9;
 }
 
 .subcell IMG {
