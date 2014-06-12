@@ -93,6 +93,7 @@ body {
 	padding: 1%;
 }
 
+
 #grid2 {
 	width: 100%;
 }
@@ -168,4 +169,20 @@ li {
 .footTitle {
 	font-size: 12pt;
 	color: #ddd;
+}
+
+
+@media only screen and (max-width : 480px) {
+	
+	h2 {
+		color: #ddd;
+	}
+
+	.cell {
+		width: 50%;
+	}
+
+	.subcell {
+		width: 100%;
+	}
 }
