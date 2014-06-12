@@ -43,7 +43,6 @@ body {
 	position: relative;
 	width: calc(99% - 400px);
 	display: inline-block;
-	margin-bottom: -50%;
 }
 
 .videoContainer iframe{
@@ -98,7 +97,7 @@ body {
 
 .cell{
 	float: left;
-	width: 31.333%;
+	width: 31%;
 	margin: 1%;
 	background: #eee;
 }
@@ -107,7 +106,6 @@ body {
 	position: relative;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
 }
 
 
@@ -146,7 +144,17 @@ body {
 	margin-left: 1%;
 	margin-right: 1%;
 	float:left;
-	width: 30%;
+	width: 31%;
+}
+
+.subcell.playable:hover {
+	box-shadow: 5px 5px 2px #888888;
+}
+
+.subcell IMG {
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 .videoCell {
