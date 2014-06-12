@@ -19,7 +19,6 @@ body {
 }
 
 .videoContainer {
-	margin-left: 1%;
 	height: 0;
 	padding-top: 25px;
 	padding-bottom: 68.5%;
@@ -47,6 +46,13 @@ body {
   padding-bottom: 70%; /*fallback when calc is not supported*/
   padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!*/
   padding-bottom: calc(56% + 41px);
+}
+
+.promoDescription {
+	margin-left: 1%;
+	position: relative;
+	float: left;
+	width: calc(99%-400px);
 }
 
 
@@ -81,18 +87,18 @@ body {
 	margin-left: auto;
 }
 
-#grid IMG {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
 .cell {
 	float: left;
 	width: 31.333%;
 	padding: 1%;
 }
 
+.cell IMG {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
 
 #grid2 {
 	width: 100%;
