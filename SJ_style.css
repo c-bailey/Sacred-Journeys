@@ -1,4 +1,3 @@
-
 head {
 	margin-right: auto;
 	margin-left: auto;
@@ -15,6 +14,7 @@ h2 {
 	color: #fff;
 	width: 100%;
 	text-align: left;
+	font-size: 18px;
 }
 
 body {
@@ -25,10 +25,11 @@ body {
 }
 
 .wholeContainer {
-	max-width: 1024px;
 	width: 100%;
+	max-width: 1024px;
 	background-color: #fff;
-	margin: 0px auto;
+	margin: auto;
+	padding: 0;
 }
 
 A {
@@ -54,6 +55,7 @@ A {
 	position:relative;
 	background-color: #000;
 	padding-top: 2%;
+	margin-bottom: 2%;
 }
 
 .videoContainer {
@@ -179,7 +181,7 @@ A {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	margin-top: -.5%;
+	margin-top: 0;
 }
 
 .main {
@@ -192,12 +194,12 @@ A {
 }
 
 .sub {
-	position: absolute;
 	width: 100%;
+	position: absolute;
 	bottom: 0;
 	z-index: 2;
 	padding: 0;
-	margin-bottom: 2%;
+	margin-bottom: 8%;
 	margin-left: 10%;
 	margin-right: 8%;
 }
@@ -230,7 +232,7 @@ A {
 	margin-left: 1%;
 	margin-right: 1%;
 	float:left;
-	width: 30%;
+	width: 25.5%;
 	overflow: hidden;
 	margin-bottom: -70%;
 }
@@ -268,7 +270,7 @@ footer {
 }
 
 ul {
-	list-style-type: none;
+	background-color: #fff;
 }
 
 li {
