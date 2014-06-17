@@ -14,7 +14,7 @@ h1 {
 h2 {
 	color: #fff;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 body {
@@ -53,6 +53,7 @@ A {
 	width: 100%;
 	position:relative;
 	background-color: #000;
+	padding-top: 2%;
 }
 
 .videoContainer {
@@ -63,9 +64,9 @@ A {
 	position: relative;
 	width: calc(99% - 350px);
 	display: inline-block;
-	vertical-align: top;
 	margin-left: 1%;
 	color: #fff;
+	vertical-align: top;
 }
 
 .videoContainer iframe{
@@ -107,7 +108,7 @@ A {
 
 @media only screen and (min-width: 768px) {
       .js #add-block-placer { display: inline-block; float: right; margin-right: 5px; vertical-align: top; }
-      .js #add-block { display: inline-block; position: absolute; z-index: 1;}
+      .js #add-block { display: inline-block; position: absolute; z-index: 1; vertical-align: top;}
     }
 
 /* end of add-block code*/
@@ -116,22 +117,31 @@ A {
 	position: relative;
 	width: 100%;
 	background-color: #fff;
-	margin-left: 9%;
-	margin-right: 9%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.tune-in {
+	/*TODO populate with styling*/
 }
 
 .title {
 	color: #E6D087;
+	float: left;
+	text-transform: uppercase;
+	font-size: 12px;
 }
 
 .description {
-	color: #8A8A8A;
+	color: #E4E4E4;
+	float: left;
+	margin-left: 2%;
 }
 
 .cell{
 	position: relative;
 	float: left;
-	width: 25%;
+	width: 28%;
 	margin: 1%;
 	background: #414141;
 }
@@ -169,7 +179,7 @@ A {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	margin-top: 5px;
+	margin-top: -.5%;
 }
 
 .main {
@@ -234,17 +244,20 @@ A {
 }
 
 .subcell.text {
-	background-color: #bbb;
+	background-color: #414141;
 	height: 100%;
 	width: 17%;
 	margin-right: 10%;
 	text-align: left;
 	padding: 1%;
+	color: #E4E4E4;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .text H1 {
 	font-size: 18px;
-	color: #fff;
+	color: #E6D087;
 	width: 100%;
 	text-align: left;
 }
@@ -287,7 +300,7 @@ li {
 @media only screen and (max-width: 650px) {
 
 	.cell {
-		width: 40%;
+		width: 43%;
 	}
 
 	.main {
@@ -315,6 +328,7 @@ li {
 	.subcell.text {
 		width: 100%;
 		margin-right: 0;
+		padding: 0;
 	}
 
 	.subcell.playable:hover {
