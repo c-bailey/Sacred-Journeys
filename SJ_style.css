@@ -128,11 +128,6 @@ body {
 	visibility: visible;
 }
 
-.cell.airdate p {
-	font-size: 18px;
-	text-align: center;
-}
-
 #grid2 {
 	width: 100%;
 }
