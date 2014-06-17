@@ -19,7 +19,7 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 A {
@@ -246,7 +246,7 @@ li {
 
 .footTitle {
 	font-size: 12pt;
-	color: #ddd;
+	color: #000;
 }
 
 
