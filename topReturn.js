@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-	jQuery('.topReturn').css({ left: '-110px'});
+	jQuery('.topReturn').css({ left: '-115px'});
 	var checkPoint = jQuery('#grid2').offset().top;
 	var duration = 500;
 	jQuery(window).scroll(function() {
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 	jQuery('.topReturn').hover(function() {
 		jQuery(this).stop(true, false).animate({left: -20}, duration);
 	}, function() {
-		jQuery(this).stop(true, false).animate({left: -110}, duration);
+		jQuery(this).stop(true, false).animate({left: -115}, duration);
 	});
 
 });

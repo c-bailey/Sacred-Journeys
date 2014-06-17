@@ -22,15 +22,20 @@ body {
 	background-color: #ddd;
 }
 
+A {
+	text-decoration: none;
+}
+
 .topReturn {
 	position: fixed;
 	width: 120px;
-	height: 40px;
-	left: -110;
-	background-color: #aaa;
+	height: 20px;
+	left: -115;
+	background-color: #fff;
 	z-index: 10;
 	border-radius: 25px;
 	text-align: center;
+	font: #333;
 	padding: 10px;
 }
 
