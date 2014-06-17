@@ -24,10 +24,10 @@ body {
 
 .topReturn {
 	position: fixed;
-	width: 2%;
-	height: 15%;
+	width: 40px;
+	height: 75px;
+	left: -30;
 	background-color: #aaa;
-	opacity: .7;
 	z-index: 10;
 }
 

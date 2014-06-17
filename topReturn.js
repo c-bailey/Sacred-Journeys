@@ -1,4 +1,5 @@
 jQuery(document).ready(function() {
+	jQuery('.topReturn').css({ left: '-30px'});
 	var checkPoint = jQuery('#grid2').offset().top;
 	var duration = 500;
 	jQuery(window).scroll(function() {
@@ -14,4 +15,11 @@ jQuery(document).ready(function() {
 		jQuery('html, body').animate({scrollTop:jQuery('#grid').position().top}, duration);
 		return false;
 	})
+
+	jQuery('.topReturn').hover(function() {
+		jQuery(this).stop(true, false).animate({left: 0}, duration);
+	}, function() {
+		jQuery(this).stop(true, false).animate({left: -30}, duration);
+	});
+
 });
