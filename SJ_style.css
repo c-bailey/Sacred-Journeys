@@ -1,3 +1,4 @@
+
 head {
 	margin-right: auto;
 	margin-left: auto;
@@ -20,8 +21,14 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: #000;
+}
+
+.wholeContainer {
 	max-width: 1024px;
+	width: 100%;
 	background-color: #fff;
+	margin: 0px auto;
 }
 
 A {
@@ -113,12 +120,20 @@ A {
 	margin-right: 9%;
 }
 
+.title {
+	color: #E6D087;
+}
+
+.description {
+	color: #8A8A8A;
+}
+
 .cell{
 	position: relative;
 	float: left;
 	width: 25%;
 	margin: 1%;
-	background: #eee;
+	background: #414141;
 }
 
 .cell IMG {
