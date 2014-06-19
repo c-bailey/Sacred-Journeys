@@ -28,8 +28,8 @@ body {
 	width: 100%;
 	max-width: 1024px;
 	background-color: #fff;
-	margin: auto;
-	padding: 0;
+	margin: 0px auto;
+	overflow: hidden;
 }
 
 A {
@@ -109,7 +109,7 @@ A {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline-block; float: right; margin-right: 5px; vertical-align: top; }
+      .js #add-block-placer { display: inline-block; float: right; margin-right: 2%; vertical-align: top; }
       .js #add-block { display: inline-block; position: absolute; z-index: 1; vertical-align: top;}
     }
 
@@ -266,7 +266,8 @@ A {
 
 footer {
 	background-color: #fff;
-	width: 100%
+	width: 100%;
+	max-width: 1024;
 }
 
 ul {
