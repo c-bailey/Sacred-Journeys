@@ -242,8 +242,6 @@ h4 {
 	z-index: 2;
 	padding: 0;
 	margin-bottom: 8%;
-	margin-left: 10%;
-	margin-right: 8%;
 }
 
 .subcell {
@@ -291,6 +289,7 @@ h4 {
 	height: 100%;
 	width: 17%;
 	margin-right: 10%;
+	margin-left: 10%;
 	text-align: left;
 	padding: 1%;
 	font-size: 10px;
@@ -361,7 +360,7 @@ li {
 
 	.col {
 		width: 100%;
-		margin-left: -4%;
+		margin-left: -5%;
 	}
 
 	.cell {
@@ -395,9 +394,10 @@ li {
 	}
 
 	.subcell.text {
-		width: 100%;
+		width: 96%;
 		margin-right: 0;
-		padding: 0;
+		margin-left: 0;
+		padding: 2%;
 	}
 
 	.subcell.playable:hover {
