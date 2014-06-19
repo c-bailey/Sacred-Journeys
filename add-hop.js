@@ -1,3 +1,5 @@
+
+
 (function(ah, $){
 
   var _win = ah.window,
@@ -10,6 +12,11 @@
   // Initialize functionality
   $(document).ready(function() { init(); });
 
+  $(window).resize(function() {
+    if ($('.videoContainer').css('width') == '100%') {
+      $('add-block').attr('data-placeholder','add-block-placer-mobile');
+    }
+  });
 
   // Prepare everything after page load
   function init() {

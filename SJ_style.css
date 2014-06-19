@@ -28,6 +28,7 @@ body {
 	max-width: 1024px;
 	margin: 0px auto;
 	overflow: hidden;
+	background-color: #fff
 }
 
 A {
@@ -138,9 +139,9 @@ h4 {
 }
 
 #grid {
-	clear: both;
 	position: relative;
 	width: 100%;
+	height: auto;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -148,6 +149,21 @@ h4 {
 .tune-in, .airdate {
 	padding-bottom: 5%;
 	padding-top: 5%;
+	font-size: 12px;
+}
+
+.place, .time {
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 2%;
+}
+
+.time {
+	background-color: #fff;
+	color: #000;
+	padding: 1%;
 }
 
 .col{
@@ -158,14 +174,6 @@ h4 {
 	text-align: center;
 	text-transform: uppercase;
 	background-color: #ddd;
-}
-
-.splitter {
-	position: relative;
-	float: left;
-	width: 0.5%;
-	height: 100%;
-	background-color: #414141
 }
 
 .cell {
@@ -215,7 +223,6 @@ h4 {
 	position: relative;
 	width: 100%;
 	z-index: 1;
-	opacity: .7;
 	bottom: 0;
 	margin: 0;
 }
@@ -295,7 +302,7 @@ footer {
 }
 
 ul {
-	background-color: #fff;
+	list-style-type: none;
 }
 
 li {
@@ -315,6 +322,9 @@ li {
 	font-size: 12pt;
 }
 
+#add-block-placer-mobile {
+	display: none;
+}
 
 @media only screen and (max-width: 767px) {
 	.videoContainer {
@@ -326,6 +336,9 @@ li {
 	.vidInfo {
 		width: 98%;
 	}
+
+	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: top; }
+    .js #add-block { display: inline-block; position: absolute; z-index: 1; vertical-align: top;}
 }
 
 @media only screen and (max-width: 600px) {
