@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	$('a').click(function(event) {
 		event.preventDefault();
-		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration);
+		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration, 'linear');
 		return false;
 	})
 
