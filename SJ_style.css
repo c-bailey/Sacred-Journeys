@@ -130,6 +130,14 @@ h4 {
 
 /* end of add-block code*/
 
+.shop {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom:20px;
+	text-align: center;
+}
+
 #grid {
 	clear: both;
 	position: relative;
@@ -140,17 +148,18 @@ h4 {
 }
 
 .tune-in {
-	/*TODO populate with styling*/
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 .title {
-	float: left;
+	/*float: left;*/
 	text-transform: uppercase;
 	font-size: 12px;
 }
 
 .description {
-	float: left;
+	/*float: left;*/
 	margin-left: 2%;
 }
 
@@ -160,6 +169,7 @@ h4 {
 	width: 28%;
 	margin: 1%;
 	background: #414141;
+	text-align: center;
 }
 
 .cell IMG {
@@ -343,7 +353,6 @@ li {
 
 	.subcell {
 		width: 100%;
-		margin: 0;
 		margin-top: 5px;
 	}
 
