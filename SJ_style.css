@@ -26,7 +26,6 @@ body {
 .wholeContainer {
 	width: 100%;
 	max-width: 1024px;
-	background-color: #fff;
 	margin: 0px auto;
 	overflow: hidden;
 }
@@ -142,7 +141,6 @@ h4 {
 	clear: both;
 	position: relative;
 	width: 100%;
-	background-color: #fff;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -159,6 +157,7 @@ h4 {
 	margin: 1%;
 	text-align: center;
 	text-transform: uppercase;
+	background-color: #ddd;
 }
 
 .splitter {
@@ -170,9 +169,10 @@ h4 {
 }
 
 .cell {
-	width: 99%;
-	margin-bottom: 5%;
-	margin-top: 5%;
+	position: relative;
+	float: left;
+	width: 96%;
+	margin: 2%;
 	background: #414141;
 }
 
@@ -208,7 +208,7 @@ h4 {
 	position: relative;
 	width: 100%;
 	padding: 0;
-	margin-bottom: -4px;
+	font-size: 0;
 }
 
 .main {
@@ -237,7 +237,6 @@ h4 {
 	float:left;
 	width: 25.5%;
 	height: 100%;
-	background-color: #fff;
 }
 
 .subcell.playable:hover {
@@ -329,14 +328,28 @@ li {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
 
 	.videoContainer {
 		margin-bottom: -80px;
 	}
 
+	.splitter {
+		display: none;
+	}
+
+	.col {
+		width: 100%;
+		margin-left: -4%;
+	}
+
 	.cell {
-		width: 43%;
+		width: 45%;
+		margin: 2%;
+	}
+
+	.cell.airdate {
+		width: 94%;
 	}
 
 	.main {
@@ -370,4 +383,5 @@ li {
 		opacity: .7;
 		box-shadow: none;
 	}
+
 }
