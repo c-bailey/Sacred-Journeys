@@ -307,12 +307,21 @@ h4 {
 	font-family: 'Source Sans Pro';
 }
 
-.text H1 {
+
+h4 {
 	font-family: Georgia;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 18pt;
 	width: 100%;
 	text-align: left;
+}
+
+h5 {
+
+}
+
+h6 {
+
 }
 
 footer {
@@ -321,10 +330,12 @@ footer {
 	overflow: hidden;
 	background-color: #fff;
 	color: #000;
+	font-family: 'Source Sans Pro';
 }
 
 ul {
 	list-style-type: none;
+	padding-left: 0;
 }
 
 li {
@@ -337,9 +348,12 @@ li {
 	position: relative;
 	float: left;
 	width: 15%;
-	padding: 1%;
-	font-size: 12pt;
+	font-size: 10pt;
 	margin: 1%;
+}
+
+.footercell.funding {
+	width: 25%;
 }
 
 span {
@@ -420,6 +434,10 @@ span {
 	}
 
 	.footercell {
+		width: 20%;
+	}
+
+	.footercell.funding {
 		width: 40%;
 	}
 
