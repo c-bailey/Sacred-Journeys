@@ -1,3 +1,5 @@
+* { -webkit-transform: none!important; -webkit-transition-property: none!important; -webkit-backface-visibility: none;}
+
 head {
 	margin-right: auto;
 	margin-left: auto;
@@ -17,7 +19,7 @@ h2 {
 
 body {
 	color: #E4E4E4;
-	font-family: sans-serif;
+	font-family: Georgia;
 	margin: 0;
 	padding: 0;
 	background-color: #000;
@@ -36,17 +38,26 @@ A {
 }
 
 .topReturn {
-	position: fixed;
-	width: 120px;
-	height: 20px;
-	left: -115;
-	background-color: #fff;
-	z-index: 10;
-	border-radius: 25px;
 	text-align: center;
-	font: #333;
-	padding: 10px;
-	box-shadow: 2px 2px 1px #444444;
+	position: fixed;
+	width: 2.5em;
+	height: 1.5em;
+	left: -1em;
+	background-color: #E4E4E4;
+	z-index: 10;
+	border-radius: 0.5em;
+	padding: 0.2em;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 0.6em solid transparent;
+	border-right: 0.6em solid transparent;
+	border-bottom: calc(1.2em*0.866) solid black;
+	z-index: 2;
+	margin-left: 1.1em;
+	margin-top: .2em;
 }
 
 .topContainer {
@@ -100,7 +111,7 @@ A {
 
 
 h4 {
-	text-align: left;
+	text-align: right;
 	margin-top: 5%;
 	margin-bottom: 2%;
 }
@@ -134,16 +145,18 @@ h4 {
 	width: 100%;
 	background-color: #fff;
 	padding-top: 20px;
+	margin-top: 1em;
 	padding-bottom:20px;
 	text-align: center;
+	font-family: 'Source Sans Pro';
 }
 
 #grid {
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-left: 5%;
-	padding-right: 5%;
+/*	padding-left: 5%;
+	padding-right: 5%;*/
 	overflow: hidden;
 	background-color: #111;
 }
@@ -158,6 +171,7 @@ h4 {
 	font-size: 16px;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	font-family: 'Source Sans Pro';
 }
 
 .place, .time {
@@ -169,27 +183,27 @@ h4 {
 }
 
 .time {
-	background-color: #fff;
-	color: #000;
+	color: #E4E4E4;
 	padding: 1%;
+	float: right;
+	font-family: 'Source Sans Pro';
 }
 
 .col{
 	position: relative;
 	float: left;
-	width: 28%;
+	width: 31%;
 	margin: 1%;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #ddd;
 }
 
 .cell {
-	position: relative;
-	float: left;
 	width: 96%;
-	margin: 2%;
-	background: #414141;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 3%;
+	background-color: #414141;
 }
 
 .cell IMG {
@@ -233,6 +247,7 @@ h4 {
 	z-index: 1;
 	bottom: 0;
 	margin: 0;
+	opacity: .7;
 }
 
 .sub {
@@ -293,9 +308,11 @@ h4 {
 	text-align: left;
 	padding: 1%;
 	font-size: 10px;
+	font-family: 'Source Sans Pro';
 }
 
 .text H1 {
+	font-family: Georgia;
 	text-transform: uppercase;
 	font-size: 18px;
 	width: 100%;
@@ -306,6 +323,7 @@ footer {
 	background-color: #fff;
 	width: 100%;
 	max-width: 1024;
+	overflow: hidden;
 }
 
 ul {
@@ -352,10 +370,6 @@ li {
 
 	.videoContainer {
 		margin-bottom: -80px;
-	}
-
-	.splitter {
-		display: none;
 	}
 
 	.col {

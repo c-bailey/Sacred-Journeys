@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.topReturn').css({ left: '-115px'});
+	$('.topReturn').css({ left: '-1em'});
 
 	var checkPoint = $('#grid2').offset().top;
 	var duration = 500;
@@ -17,12 +17,12 @@ $(document).ready(function() {
 		event.preventDefault();
 		$root.animate({scrollTop:$('#grid').position().top}, duration);
 		return false;
-	})
-
-	$('.topReturn').hover(function() {
-		$(this).stop(true, false).animate({left: -20}, duration);
-	}, function() {
-		$(this).stop(true, false).animate({left: -115}, duration);
 	});
+
+	// $('.topReturn').hover(function() {
+	// 	$(this).stop(true, false).animate({left: -20}, duration);
+	// }, function() {
+	// 	$(this).stop(true, false).animate({left: -115}, duration);
+	// });
 
 });
