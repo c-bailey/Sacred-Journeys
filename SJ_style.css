@@ -3,21 +3,45 @@
 .logo {
 	width: 100%;
 	text-align: center;
+	z-index: 0;
+	overflow: hidden;
 }
+
+.logo IMG {
+	width: 100%;
+}
+
 
 h1,h2 {
 	display: inline;
-	font-size: 18px;
+	z-index: 1;
+}
+
+h1 {
+	font-style: bold;
+	font-size: 1.25em;/*20/16px*/
+	color: #fff389;
 }
 
 h2,h3 {
 	font-family: 'Source Sans Pro';
 }
 
+h2 {
+	font-style: normal;
+	font-size: 1.125em;
+	color: #fff;
+}
+
+h2:hover {
+	text-decoration: underline;
+}
+
 h3 {
 	text-align: right;
-	font-size: 10pt;
+	font-size: 0.75em;
 	margin-bottom: 0.2em;
+	color: #939598
 }
 
 body {
@@ -68,7 +92,6 @@ A {
 	width: 100%;
 	height: auto;
 	position:relative;
-	background-color: #000;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
@@ -371,11 +394,19 @@ li {
 
 .footercell.funding {
 	width: 25%;
+	font-style: normal;
+	font-size: 0.75em;
+	line-height: 0.9375em;
 }
 
 span {
 	margin-left: 5%;
 	text-transform: uppercase;
+	font-style: normal;
+	font-size: 0.875em;
+}
+span a {
+	color: #bdac65
 }
 
 #add-block-placer-mobile {
@@ -393,7 +424,7 @@ span {
 		width: 98%;
 	}
 
-	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: top;}
+	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: to}
     .js #add-block { display: none; position: absolute; z-index: 1; vertical-align: top;}
 }
 
