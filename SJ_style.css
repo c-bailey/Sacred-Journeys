@@ -186,33 +186,7 @@ h4 {
 	overflow: hidden;
 }
 
-.tune-in {
-	padding-bottom: 10%;
-	padding-top: 0;
-	font-size: 12px;
-}
 
-.airdate {
-	font-size: 16px;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	font-family: 'Source Sans Pro';
-}
-
-.place, .time {
-	position: relative;
-	float: left;
-	display: inline-block;
-	padding: 0;
-	margin: 2%;
-}
-
-.time {
-	color: #E4E4E4;
-	padding: 1%;
-	float: right;
-	font-family: 'Source Sans Pro';
-}
 
 .col{
 	position: relative;
@@ -224,10 +198,10 @@ h4 {
 
 .cell {
 	width: 96%;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
 	padding: 3%;
-	background-color: #414141;
+	background-color: #3a3a3c;
 }
 
 .cell IMG {
@@ -238,6 +212,54 @@ h4 {
 
 .cell:hover IMG {
 	opacity: .8;
+}
+
+.airdate {
+	font-weight: bold;
+	font-size: 1.375em;
+	color: #d1d2d4;
+	background-color: #58595b;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	font-family: 'Source Sans Pro';
+}
+
+.airdate p {
+	margin: 0;
+	margin-left: 1%;
+}
+
+.tune-in {
+	padding-bottom: 10%;
+	padding-top: 0;
+}
+
+.country, .pilgrimage, .time {
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 2%;
+}
+
+.pilgrimage {
+	font-weight: bold;
+	font-size: 1.125em;
+	color: #fff;
+}
+
+.country {
+	font-weight: normal;
+	font-size: 1em;
+	color: #e6e7e8;
+}
+
+.time {
+	float: right;
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	font-size: 1.125em;
+	color: #fff;
 }
 
 .explore {
