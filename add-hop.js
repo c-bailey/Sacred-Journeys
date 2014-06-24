@@ -13,8 +13,19 @@
   $(document).ready(function() { init(); });
 
   $(window).resize(function() {
-    if ($('.videoContainer').css('width') == '100%') {
-      $('add-block').attr('data-placeholder','add-block-placer-mobile');
+    if ($(window).width() <= 767) {
+      _addBlock.setAttribute('data-placeholder','add-block-placer-mobile');
+      _placeholderId = _addBlock.getAttribute( 'data-placeholder' ),
+      _placeholder = _doc.getElementById( _placeholderId );
+      // console.log(_addBlock.getAttribute('data-placeholder'));
+      // console.log(_placeholderId);
+      // console.log(_placeholderId)
+    }
+
+    if ($(window).width() >767) {
+      _addBlock.setAttribute('data-placeholder','add-block-placer');
+      _placeholderId = _addBlock.getAttribute( 'data-placeholder' ),
+      _placeholder = _doc.getElementById( _placeholderId );
     }
   });
 
@@ -90,6 +101,7 @@
         } while ( elt = elt.offsetParent );
     return {'left': curLeft - diffLeft, 'top': curTop - diffTop};
     }
+    console.log(_placeholderId);
   }
 
   // Return sum of offsets of absolutely or relatively positioned ancestors to the given element

@@ -14,6 +14,12 @@ h2,h3 {
 	font-family: 'Source Sans Pro';
 }
 
+h3 {
+	text-align: right;
+	font-size: 10pt;
+	margin-bottom: 0.2em;
+}
+
 body {
 	color: #E4E4E4;
 	font-family: Georgia;
@@ -140,7 +146,7 @@ h4 {
 
 .shop {
 	width: 100%;
-	background-color: #fff;
+	background-color: #aaa;
 	padding-top: 20px;
 	margin-top: 1em;
 	padding-bottom:20px;
@@ -261,17 +267,18 @@ h4 {
 	width: 25.5%;
 	height: 100%;
 	background-color: #414141;
+	display: inline;
+	vertical-align: bottom;
 }
 
-.subcell.playable:hover {
+/*.subcell.playable:hover {
 	box-shadow: 5px 5px 2px #888888;
 	opacity: .9;
-}
+}*/
 
 .subcell IMG {
 	position: relative;
 	width: 100%;
-	vertical-align: bottom;
 }
 
 .videoCell {
@@ -386,7 +393,7 @@ span {
 		width: 98%;
 	}
 
-	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: top; }
+	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: top;}
     .js #add-block { display: none; position: absolute; z-index: 1; vertical-align: top;}
 }
 
@@ -398,12 +405,14 @@ span {
 
 	.col {
 		width: 100%;
-		margin-left: -5%;
+		margin: 0;
 	}
 
 	.cell {
-		width: 45%;
-		margin: 2%;
+		float: left;
+		width: 44%;
+		margin: 1%;
+		padding: 2%;
 	}
 
 	.cell.airdate {
