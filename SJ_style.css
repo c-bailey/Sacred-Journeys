@@ -337,31 +337,54 @@ h4 {
 	font-family: 'Source Sans Pro';
 }
 
-.playable h6 {
-	margin-left: 1em;
-	padding-bottom: 1em;
+/*.videoHead {
+	background-color: #3a3a3c;
+	padding: 1em;
+	overflow: hidden;
 }
+
+.title {
+	font-style: bold;
+	font-size: 1.125em;
+	color: #fff;
+}
+
+.duration {
+	font-style: normal;
+	font-size: 1em;
+	color: #d1d2d4;
+}*/
 
 h4,h5,h6 {
 	margin: 0;
-	margin-top: 1em;
+	margin-top: 0.5em;
+	color: #fff;
 }
 
 h4 {
 	font-family: Georgia;
 	text-transform: uppercase;
-	font-size: 18pt;
-	width: 100%;
+	font-weight: bold;
+	font-size: 1.875em;
 	text-align: left;
 }
 
 h5 {
 	font-family: Georgia;
-	font-size: 14pt;
+	font-size: 1.625em;
+	font-weight: normal;
 }
 
 h6 {
-	font-size: 10pt;
+	font-weight: normal;
+	font-size: 1.375em;
+}
+
+.subcell p {
+	font-weight: lighter;
+	font-size: 1.25em;
+	line-height: 1.625em;
+	color: #bcbdc0
 }
 
 footer {
@@ -407,6 +430,10 @@ span {
 }
 span a {
 	color: #bdac65
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 #add-block-placer-mobile {
