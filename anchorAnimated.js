@@ -7,6 +7,18 @@ $(document).ready(function() {
 		event.preventDefault();
 		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration, 'linear');
 		return false;
-	})
+	});
+
+	$(window).resize(SetAnchors)
+
+	function SetAnchors() {
+		if (screen.width<=600) {
+
+		}
+
+		if (screen.width>=601) {
+
+		}
+	}
 
 });
