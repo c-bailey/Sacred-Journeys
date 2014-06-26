@@ -15,7 +15,6 @@
 	<body>
 		<div class='wholeContainer'>
 			<!--#include virtual="/includes/global-ex.html"-->
-			<!--TODO insert logo from 3Jane-->
 			<div class="logo">
 				<img src="img/sj_branding_dt_hi.jpg" class = "web">
 				<img src="img/sj_branding_dt_hi.jpg" class="mobile">
@@ -25,7 +24,7 @@
 			<!--Preview video-->
 			<a class="topReturn" href="#grid" style='display: none;'><div class="arrow-up"></div></a>
 			<div class="topContainer">
-
+				<!--TODO figure out iframe weirdness-->
 				<div class="videoContainer">
 					<div class='coveplayer'><iframe id="partnerPlayer" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=false&endscreen=false"></iframe></div>
 					<!-- <div class='vidInfo'>
@@ -35,7 +34,6 @@
 					</div> -->
 				</div>
 
-				<!--TODO move add in mobile-->
 				<div id="add-block-placer" class="add-container"><!-- For wider screen viewing experience this placeholder is given a height and width. Its position is then used for relocating add block. --></div>
 
 		        <div class='vidInfo'>
@@ -48,7 +46,10 @@
 
 			<!--<div style="clear:both;"></div>-->
 
-			<!--TODO unjankify mobile?-->
+			<!--TODO ANCHOR LINKS ON MOBILE-->
+			<!--TODO text break points?-->
+			<!--TODO why images dissapear-->
+			<!--TODO prettify animation-->
 
 			<!--Location Images-->
 			<div id="grid">
@@ -135,8 +136,8 @@
 			<div style="clear:both;"></div>
 
 			<!--Location Details-->
-			<!--TODO fix linking on mobile-->
-			<!--TODO make sub elements layout nicer - fix text box dimensions?-->
+			
+			<!--TODO ALIGN BOTTOM?-->
 			<div id="grid2">
 				<div id="Lourdes" class="details">
 					<img src="img/lourdesWide.jpg" class="main">
@@ -147,13 +148,14 @@
 							<h5>France</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clip1" onclick="playVideo(this,Vid1);return false;" class="subcell playable">
+						<div id="clip1" onclick="playVideo(this,Vid1);return false;" class="subcell text playable">
 							<img src="img/lourdesClose.jpg">
-							<!-- <h6>Video Title (00:00)</h6> -->
-							<div class='title'>Video Title</div>
-							<div class='duration'>(00:00)</div>
+							<div class='videoHead'>
+								<div class='title'>Video Title</div>
+								<div class='duration'>(00:00)</div>
+							</div>
 						</div>
-						<div id="clip2" onclick="playVideo(this,Vid2);return false;" class="subcell playable"><img src="img/lourdesWide.jpg">
+						<div id="clip2" onclick="playVideo(this,Vid2);return false;" class="subcell text playable"><img src="img/lourdesWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
@@ -170,13 +172,13 @@
 							<h5>Japan</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clip5" onclick="playVideo(this,Vid5);return false;" class="subcell playable"><img src="img/shikokuClose.png">
+						<div id="clip5" onclick="playVideo(this,Vid5);return false;" class="subcell text playable"><img src="img/shikokuClose.png">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
 							</div>
 						</div>
-						<div id="clip6" onclick="playVideo(this,Vid6);return false;" class="subcell playable"><img src="img/shikokuWide.jpg">
+						<div id="clip6" onclick="playVideo(this,Vid6);return false;" class="subcell text playable"><img src="img/shikokuWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
@@ -193,13 +195,13 @@
 							<h5>Israel</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clipB" onclick="playVideo(this,VidB);return false;" class="subcell playable"><img src="img/jerusalemClose.jpg">
+						<div id="clipB" onclick="playVideo(this,VidB);return false;" class="subcell text playable"><img src="img/jerusalemClose.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
 							</div>
 						</div>
-						<div id="clipC" onclick="playVideo(this,VidC);return false;" class="subcell playable"><img src="img/jerusalemWide.jpg">
+						<div id="clipC" onclick="playVideo(this,VidC);return false;" class="subcell text playable"><img src="img/jerusalemWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
@@ -216,13 +218,13 @@
 							<h5>Mecca</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clip3" onclick="playVideo(this,Vid3);return false;" class="subcell playable"><img src="img/hajjClose.png">
+						<div id="clip3" onclick="playVideo(this,Vid3);return false;" class="subcell text playable"><img src="img/hajjClose.png">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
 							</div>
 						</div>
-						<div id="clip4" onclick="playVideo(this,Vid4);return false;" class="subcell playable"><img src="img/hajjWide.jpg">
+						<div id="clip4" onclick="playVideo(this,Vid4);return false;" class="subcell text playable"><img src="img/hajjWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
@@ -239,13 +241,13 @@
 							<h5>India</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clip7" onclick="playVideo(this,Vid7);return false;" class="subcell playable"><img src="img/kumbhmelaClose.jpg">
+						<div id="clip7" onclick="playVideo(this,Vid7);return false;" class="subcell text playable"><img src="img/kumbhmelaClose.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
 							</div>
 						</div>
-						<div id="clip8" onclick="playVideo(this,Vid8);return false;" class="subcell playable"><img src="img/kumbhmelaWide.jpg">
+						<div id="clip8" onclick="playVideo(this,Vid8);return false;" class="subcell text playable"><img src="img/kumbhmelaWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
@@ -262,13 +264,13 @@
 							<h5>Nigeria</h5>
 							<p>Journey to the Catholic shrine of Lourdes in Southwest France with active duty and retired US veterans in search of healing.</p>
 						</div>
-						<div id="clip9" onclick="playVideo(this,Vid9);return false;" class="subcell playable"><img src="img/nigeriaClose.jpg">
+						<div id="clip9" onclick="playVideo(this,Vid9);return false;" class="subcell text playable"><img src="img/nigeriaClose.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
 							</div>
 						</div>
-						<div id="clipA" onclick="playVideo(this,VidA);return false;" class="subcell playable"><img src="img/nigeriaWide.jpg">
+						<div id="clipA" onclick="playVideo(this,VidA);return false;" class="subcell text playable"><img src="img/nigeriaWide.jpg">
 							<div class='videoHead'>
 								<div class='title'>Video Title</div>
 								<div class='duration'>(00:00)</div>
