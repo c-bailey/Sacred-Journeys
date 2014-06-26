@@ -16,6 +16,7 @@ body {
 	text-align: center;
 	z-index: 0;
 	overflow: hidden;
+	display: block;
 }
 
 .logo IMG {
@@ -30,11 +31,11 @@ body {
 	margin-left: -300px;
 }
 
-.premiere h1, .premiere h2 {
+.premiere h1, .premiere h2, .premiere p {
 	display: inline;
 }
 
-.premiere h1 {
+.premiere h1, .premiere p {
 	font-weight: bold;
 	font-size: 1.25em;/*20/16px*/
 	color: #fff3B9;
@@ -98,37 +99,42 @@ A {
 	height: auto;
 	position:relative;
 	padding-top: 2%;
-	padding-bottom: 2%;
-	margin-top: -190px;
+	margin-top: -180px;
 	overflow: hidden;
+/*	margin-bottom: -500px;*/
 }
 
-.videoContainer {
-	height: 0;
+/*.videoContainer {
+	float: left;
 	padding-top: 25px;
-	padding-bottom: 68.5%;
-	margin-bottom: 10px;
+	padding-bottom: 62.5%;
 	position: relative;
-	width: 56.5%;
+	width: calc(95% - 400px);
+	height: 0 !important;
 	display: inline-block;
 	margin-left: 5.97%;
 	vertical-align: top;
-	margin-bottom: -300px;
-}
+	overflow: hidden;
 
-.videoContainer iframe{
+}*/
+
+
+
+.coveplayer iframe{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+	line-height: 0;
 }
 
 .vidInfo {
 	position: relative;
 	float: left;
+	width: calc(95% - 400px);
 	margin-left: 5.97%;
-	width: calc(99% - 350px);
 }
 
 .vidInfo h2, .vidInfo p {
@@ -156,17 +162,6 @@ A {
 	margin-top: 0;
 }
 
-.cove-box {
-  overflow: hidden; /*responsive video*/
-  padding-bottom: 56%;
-}
-
-.cove-box.allowshare {
-  padding-bottom: 70%; /*fallback when calc is not supported*/
-  padding-bottom: -webkit-calc(56% + 41px); /*takes into account the topbar with fixed height!*/
-  padding-bottom: calc(56% + 41px);
-}
-
 
 /*All add-block css below*/
 
@@ -174,12 +169,13 @@ A {
 	top: 0;
 	width: 300px;
 	height: 380px;
-	padding-left: 3%;
+	padding-left: 1%;
 }
 
 #add-block {
 	position: static;
 	margin: 0 auto;
+	margin-top: 1.5em;
 }
 
 #add-block-placer {
@@ -195,7 +191,7 @@ A {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline; float: right; margin-right: 2%; vertical-align: top; }
+      .js #add-block-placer { display: inline; float: left; margin-left: 1%; vertical-align: top; }
       .js #add-block { display: inline-block; position: absolute; z-index: 1;}
     }
 
@@ -297,20 +293,6 @@ A {
 	font-weight: normal;
 	font-size: 1.125em;
 	color: #fff;
-}
-
-.explore {
-	z-index: 3;
-	position: absolute;
-	margin-top: 30%;
-	margin-left: 35%;
-	text-align: center;
-	color: #fff;
-	visibility: hidden;
-}
-
-.cell:hover .explore {
-	visibility: visible;
 }
 
 #grid2 {
@@ -527,7 +509,7 @@ a:hover {
 	.videoContainer {
 		width: 96%;
 		margin-left: 2%;
-		margin-bottom: -100px;
+		/*margin-bottom: -100px;*/
 	}
 
 	.vidInfo {
@@ -547,19 +529,23 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
-	.premiere h1, .premiere h2 {
+	.premiere h2, .premiere h1 {
 		display: block;
 		text-align: center;
 		line-height: 0.75em;
+	}
+
+	.premiere p {
+		display: none;
 	}
 
 	.topContainer {
 		margin-top: -50px;
 	}
 
-	.videoContainer {
+	/*.videoContainer {
 		margin-bottom: -80px;
-	}
+	}*/
 
 	.col {
 		width: 100%;
@@ -619,6 +605,26 @@ a:hover {
 
 	.footercell.funding {
 		width: 40%;
+	}
+
+}
+
+@media only screen and (max-width: 530px) {
+
+	.premiere h1 {
+		font-size: 1em;
+	}
+
+	.premiere h2 {
+		font-size: .875em;
+	}
+
+	.topContainer {
+		margin-top: -20px;
+	}
+
+	.premiere {
+		margin-top: -120px;
 	}
 
 }
