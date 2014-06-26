@@ -12,23 +12,6 @@
   // Initialize functionality
   $(document).ready(function() { init(); });
 
-  $(window).resize(function() {
-    if ($(window).width() <= 767) {
-      _addBlock.setAttribute('data-placeholder','add-block-placer-mobile');
-      _placeholderId = _addBlock.getAttribute( 'data-placeholder' ),
-      _placeholder = _doc.getElementById( _placeholderId );
-      // console.log(_addBlock.getAttribute('data-placeholder'));
-      // console.log(_placeholderId);
-      // console.log(_placeholderId)
-    }
-
-    if ($(window).width() >767) {
-      _addBlock.setAttribute('data-placeholder','add-block-placer');
-      _placeholderId = _addBlock.getAttribute( 'data-placeholder' ),
-      _placeholder = _doc.getElementById( _placeholderId );
-    }
-  });
-
   // Prepare everything after page load
   function init() {
     _addBlock = _doc.getElementById( _addBlockId ),

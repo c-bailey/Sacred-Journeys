@@ -40,7 +40,7 @@ body {
 	color: #fff3B9;
 }
 
-h2,h3 {
+.premiere h2, .add-container h3 {
 	font-family: 'Source Sans Pro';
 }
 
@@ -51,7 +51,7 @@ h2,h3 {
 }
 
 
-h3 {
+.add-container h3 {
 	text-align: right;
 	font-size: 0.75em;
 	margin-bottom: 0.2em;
@@ -100,6 +100,7 @@ A {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin-top: -190px;
+	overflow: hidden;
 }
 
 .videoContainer {
@@ -167,33 +168,35 @@ A {
 }
 
 
-h4 {
-	text-align: right;
-	margin-top: 5%;
-	margin-bottom: 2%;
-}
 /*All add-block css below*/
 
 .add-container {
 	top: 0;
 	width: 300px;
-	height: 310px;
+	height: 380px;
 	padding-left: 3%;
 }
 
 #add-block {
 	position: static;
 	margin: 0 auto;
-	display: none;
 }
 
 #add-block-placer {
 	display: none;
+	width: 300px;
+	height: 380px;
+}
+
+#ad-mobile {
+	width: 100%;
+	float: left;
+	display: block;
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: none; float: right; margin-right: 2%; vertical-align: top; }
-      .js #add-block { display: inline-block; position: absolute; z-index: 1; vertical-align: top;}
+      .js #add-block-placer { display: inline; float: right; margin-right: 2%; vertical-align: top; }
+      .js #add-block { display: inline-block; position: absolute; z-index: 1;}
     }
 
 /* end of add-block code*/
@@ -412,13 +415,13 @@ h4 {
 	color: #d1d2d4;
 }*/
 
-h4,h5,h6 {
+.subcell h4, .subcell h5, .subcell h6 {
 	margin: 0;
 	margin-top: 0.5em;
 	color: #fff;
 }
 
-h4 {
+.subcel h4 {
 	font-family: Georgia;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -426,13 +429,13 @@ h4 {
 	text-align: left;
 }
 
-h5 {
+.subcell h5 {
 	font-family: Georgia;
 	font-size: 1.625em;
 	font-weight: normal;
 }
 
-h6 {
+.subcell h6 {
 	font-weight: normal;
 	font-size: 1.375em;
 }
@@ -493,10 +496,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-#add-block-placer-mobile {
-	display: none;
-}
-
 .mobile {
 	display: none;
 }
@@ -505,27 +504,37 @@ a:hover {
 	display: block;
 }
 
-hr {
-	display: none;
+.footTitle {
+	margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 767px) {
+
+	.premiere {
+		position: relative;
+		float: left;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		margin-top: -150px;
+	}
+
 	.topContainer {
-		margin-top: -120px;
+		margin-top: -80px;
 	}
 
 	.videoContainer {
-		width: 100%;
-		margin-left: 0;
+		width: 96%;
+		margin-left: 2%;
 		margin-bottom: -100px;
 	}
 
 	.vidInfo {
-		width: 98%;
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
-
-	.js #add-block-placer-mobile { display: inline; float: left; margin-right: 2%; vertical-align: to}
-    .js #add-block { display: none; position: absolute; z-index: 1; vertical-align: top;}
 
     .web {
     	display: none;
@@ -538,8 +547,14 @@ hr {
 
 @media only screen and (max-width: 600px) {
 
+	.premiere h1, .premiere h2 {
+		display: block;
+		text-align: center;
+		line-height: 0.75em;
+	}
+
 	.topContainer {
-		margin-top: -90px;
+		margin-top: -50px;
 	}
 
 	.videoContainer {
