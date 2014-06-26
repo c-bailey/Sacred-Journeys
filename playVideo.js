@@ -16,4 +16,5 @@ var VidC = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlay
 function playVideo(element,video) {
 	$(element).empty();
 	$(element).append(video);
+	$(element).css('background-color','transparent')
 };

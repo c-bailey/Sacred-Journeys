@@ -329,14 +329,32 @@ A {
 	z-index: 2;
 	padding: 0;
 	margin-bottom: 5%;
+	vertical-align: bottom;
 }
 
 .subcell.text, .subcell.text.playable {
-	position: relative;
-	float:left;
+	/*position: relative;
+	float:left;*/
 	width: 31%;
-	margin-right: 1.69%;
+	/*margin-right: 1.69%;*/
 	background-color: #414141;
+}
+
+.one, .two, .three {
+	position: absolute;
+	bottom: 0;
+}
+
+.one {
+	left: 0;
+}
+
+.two {
+	left: 32.69%;
+}
+
+.three {
+	left:65.38%;
 }
 
 
@@ -355,13 +373,13 @@ A {
 	padding-top: 25px;
 	padding-bottom: 68.5%;
 	margin-bottom: 10px;
-	position: relative;
+	/*position: relative;
 	margin-left: 1%;
 	margin-right: 1%;
-	float:left;
+	float:left;*/
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: -70%;
+	/*margin-bottom: -70%;*/
 }
 
 .videoCell iframe{
@@ -572,6 +590,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+	.one, .two, .three {
+		position: relative;
+		float: left;
+		left:0;
+	}
 
 	.premiere h2, .premiere h1 {
 		display: block;
