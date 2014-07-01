@@ -102,6 +102,20 @@ A {
 	overflow: hidden;
 }
 
+.promoHolder {
+	float: left;
+	position: relative;
+	width: calc(95% - 400px);
+	display: inline-block;
+	margin-left: 5.97%;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.promoHolder IMG {
+	width: 100%;
+}
+
 .videoContainer {
 	float: left;
 	padding-top: 25px;
@@ -317,7 +331,7 @@ A {
 	z-index: 1;
 	bottom: 0;
 	margin: 0;
-	opacity: .7;
+	opacity: .8;
 }
 
 .sub {

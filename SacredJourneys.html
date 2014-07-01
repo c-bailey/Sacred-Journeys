@@ -25,13 +25,10 @@
 			<a class="topReturn" href="#grid" style='display: none;'><div class="arrow-up"></div></a>
 			<div class="topContainer">
 				<!--TODO figure out iframe weirdness-->
-				<div class="videoContainer">
-					<div class='coveplayer'><iframe id="partnerPlayer" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=false&endscreen=false"></iframe></div>
-					<!-- <div class='vidInfo'>
-			    	<h2>Coming Soon: Sacred Journeys with Bruce Feiler</h2>
-					<p>Sacred Journeys with Bruce Feiler is a groundbreaking new series that takes viewers back into ancient history by traveling through sacred landscapes. Hosted by writer/adventurer Bruce Feiler,SacredJourneys joins contemporary religious pilgrims as they explore ancient pilgrimage routes and holy sites that continue to be surprisingly vibrant and relevant today. </p>
-					<p class="tagline">What journey are you on?</p>
-					</div> -->
+				<div id="promoBlock" onclick="playVideo(this,promo);return false;">
+					<div class='promoHolder'>
+					<img src="img/bruce_signature.jpg">
+					</div>
 				</div>
 
 				<div id="add-block-placer" class="add-container"><!-- For wider screen viewing experience this placeholder is given a height and width. Its position is then used for relocating add block. --></div>
@@ -47,8 +44,6 @@
 			<!--<div style="clear:both;"></div>-->
 
 			<!--TODO ANCHOR LINKS ON MOBILE-->
-			<!--TODO text break points?-->
-			<!--TODO prettify animation-->
 
 			<!--Location Images-->
 			<div id="grid">
@@ -58,7 +53,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Lourdes"> 
-							<img src="img/lourdesClose.jpg">
+							<img src="img/lourdes_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">8/7 C</div>
@@ -68,7 +63,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Shiko">
-							<img src="img/shikokuClose.png">
+							<img src="img/shikoku_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">9/8 C</div>
@@ -84,7 +79,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Jerusalem">
-							<img src="img/jerusalemClose.jpg">
+							<img src="img/jerusalem_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">8/7 C</div>
@@ -94,7 +89,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Hajj">
-							<img src="img/hajjClose.png">
+							<img src="img/hajj_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">9/8 C</div>							
@@ -110,7 +105,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Kumbh">
-							<img src="img/kumbhmelaClose.jpg">
+							<img src="img/kumbhmela_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">8/7 C</div>
@@ -120,7 +115,7 @@
 					</div>
 					<div class="cell">
 						<a href="#Nigeria">
-							<img src="img/nigeriaClose.jpg">
+							<img src="img/osunosogbo_close.jpg">
 						</a>
 						<div class="tune-in">
 							<div class="time">9/8 C</div>
@@ -137,7 +132,7 @@
 			<!--Location Details-->
 			<div id="grid2">
 				<div id="Lourdes" class="details">
-					<img src="img/lourdesWide.jpg" class="main">
+					<img src="img/lourdes_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="LourdesMob"> 
 							<h6>December 16, 8/7C</h6>
@@ -161,7 +156,7 @@
 					</div>
 				</div>
 				<div id="Shiko" class="details">
-					<img src="img/shikokuWide.jpg" class="main">
+					<img src="img/shikoku_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="ShikoMob"> 
 							<h6>December 16, 9/8C</h6>
@@ -184,7 +179,7 @@
 					</div>
 				</div>
 				<div id="Jerusalem" class="details">
-					<img src="img/jerusalemWide.jpg" class="main">
+					<img src="img/jerusalem_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="JerusalemMob"> 
 							<h6>December 23, 8/7C</h6>
@@ -207,7 +202,7 @@
 					</div>
 				</div>
 				<div id="Hajj" class="details">
-					<img src="img/hajjWide.jpg" class="main">
+					<img src="img/hajj_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="HajjMob"> 
 							<h6>December 23, 9/8C</h6>
@@ -230,7 +225,7 @@
 					</div>
 				</div>
 				<div id="Kumbh" class="details">
-					<img src="img/kumbhmelaWide.jpg" class="main">
+					<img src="img/kumbhmela_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="KumbhMob"> 
 							<h6>December 30, 8/7C</h6>
@@ -253,7 +248,7 @@
 					</div>
 				</div>
 				<div id="Nigeria" class="details">
-					<img src="img/nigeriaWide.jpg" class="main">
+					<img src="img/osunosogbo_wide.jpg" class="main">
 					<div class="sub">
 						<div class="subcell text one" id="NigeriaMob"> 
 							<h6>December 30, 9/8C</h6>

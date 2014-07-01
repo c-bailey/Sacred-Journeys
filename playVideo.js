@@ -1,5 +1,5 @@
 //Play Video function
-
+var promo = "<div class='videoContainer'<div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
 var Vid1 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
 var Vid2 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
 var Vid3 = "<div class='videoCell'><div class='cove-box'><iframe id='partnerPlayer' frameborder='0' marginwidth='0' marginheight='0' scrolling='no' src='http://video.pbs.org/widget/partnerplayer/2365050419/?w=1383&h=900&chapterbar=true&autoplay=true&endscreen=false'></iframe></div></div>"
