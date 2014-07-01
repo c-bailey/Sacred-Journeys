@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var duration = 500;
+	var duration = 1000;
 	var $root = $('html, body');
 	var checkPoint = $('#grid2').offset().top;
 

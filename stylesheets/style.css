@@ -56,9 +56,10 @@ body {
 }
 
 .add-container h3 {
+	font-weight: 200;
 	text-align: right;
 	font-size: 0.75em;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.4em;
 	color: #939598
 }
 
@@ -114,6 +115,7 @@ A {
 	margin-left: 5.97%;
 	vertical-align: top;
 	overflow: hidden;
+	margin-bottom: 1em;
 }
 
 .promoHolder IMG {
@@ -121,19 +123,14 @@ A {
 }
 
 .videoContainer {
-	float: left;
-	padding-top: 25px;
-	padding-bottom: 62.5%;
 	position: relative;
-	width: calc(95% - 400px);
-	height: 0 !important;
-	display: inline-block;
-	margin-left: 5.97%;
-	vertical-align: top;
+	padding-bottom: 56%;
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	height: 0;
 	overflow: hidden;
-	margin-bottom: -63%;
 }
-
 
 .videoContainer iframe{
 	position: absolute;
@@ -141,16 +138,14 @@ A {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	line-height: 0;
 }
 
 .vidInfo {
-	position: relative;
 	float: left;
+	position: relative;
 	width: calc(95% - 400px);
 	margin-left: 5.97%;
-	margin-top: -4%;
+	overflow: hidden;
 }
 
 .vidInfo h1, .vidInfo h2, .vidInfo p {
@@ -190,7 +185,7 @@ A {
 .add-container {
 	top: 0;
 	width: 300px;
-	height: 380px;
+	height: 365px;
 	padding-left: 1%;
 }
 
@@ -203,7 +198,7 @@ A {
 #add-block-placer {
 	display: none;
 	width: 300px;
-	height: 380px;
+	height: 365px;
 }
 
 #ad-mobile {
@@ -213,7 +208,7 @@ A {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline; float: left; margin-left: 1%; vertical-align: top; }
+      .js #add-block-placer { display: inline; float: right; margin-right: 5%; vertical-align: top; }
       .js #add-block { display: inline-block; position: absolute; z-index: 1;}
     }
 
@@ -389,22 +384,6 @@ A {
 	width: 100%;
 }
 
-.videoCell {
-	height: 0;
-	padding-bottom: 68.5%;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: hidden;
-}
-
-.videoCell iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .subcell.text {
 	width: 25%;
 	text-align: left;
@@ -545,25 +524,8 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 995px) {
-
-	.vidInfo {
-		margin-top: -8%;
-	}
-}
-
-@media only screen and (max-width: 945px) {
-
-	.vidInfo {
-		margin-top: -10%;
-	}
-}
 
 @media only screen and (max-width: 895px) {
-
-	.vidInfo {
-		margin-top: -14%;
-	}
 
 	.time, .pilgrimage, .country {
 		display: block;
@@ -573,27 +535,6 @@ a:hover {
 
 	.country .web {
 		display: none;
-	}
-}
-
-@media only screen and (max-width: 860px) {
-
-	.vidInfo {
-		margin-top: -16%;
-	}
-}
-
-@media only screen and (max-width: 840px) {
-
-	.vidInfo {
-		margin-top: -18%;
-	}
-}
-
-@media only screen and (max-width: 820px) {
-
-	.vidInfo {
-		margin-top: -20%;
 	}
 }
 
@@ -632,10 +573,9 @@ a:hover {
 		margin-top: -80px;
 	}
 
-	.videoContainer, .promoHolder {
+	.promoHolder {
 		width: 96%;
 		margin-left: 2%;
-		margin-bottom: 0;
 	}
 
 	.vidInfo {
@@ -740,13 +680,6 @@ a:hover {
 		position: relative;
 		margin: 0;
 		width: 100%;
-	}
-
-	.videoCell {
-		width: 100%;
-		margin: 0;
-		margin-top: 5px;
-		margin-bottom: 0;
 	}
 
 	.subcell {
