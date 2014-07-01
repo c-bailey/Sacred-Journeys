@@ -362,7 +362,7 @@ A {
 	vertical-align: bottom;
 }
 
-.subcell.text, .subcell.text.playable {
+.subcell.text, .subcell.text.playable .two, .subcell.text.playable .three{
 	width: 31%;
 	background-color: #414141;
 }
@@ -370,6 +370,7 @@ A {
 .one, .two, .three {
 	position: absolute;
 	bottom: 0;
+	display: inline-block;
 }
 
 .one {
@@ -384,20 +385,20 @@ A {
 	left:65.38%;
 }
 
-.subcell IMG {
+.subcell .two IMG, .subcell .three IMG {
 	position: relative;
 	width: 100%;
 }
 
-.videoCell {
+.subcell.text.playable .videoCell.two, .subcell.text.playable .videoCell.three {
 	height: 0;
 	padding-bottom: 68.5%;
-	margin-bottom: 10px;
-	width: 100%;
+	margin-bottom: -400px;
 	overflow: hidden;
+	background-color: transparent;
 }
 
-.videoCell iframe{
+.subcell.text.playable .videoCell.two iframe, .subcell.text.playable .videoCell.three iframe{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -406,6 +407,7 @@ A {
 }
 
 .subcell.text {
+	overflow: hidden;
 	width: 25%;
 	text-align: left;
 	padding: 2% 3%;
@@ -417,6 +419,22 @@ A {
 	padding: 0;
 	background-color: #3a3a3c;
 	font-family: georgia;
+}
+
+.subcell.text.playable .two.playButton, .subcell.text.playable .three.playButton{
+	z-index: 1;
+	background-color: transparent;
+	text-align: center;
+	top:-210px;
+}
+
+.two.playButton IMG, .three.playButton IMG {
+	border-radius: 10%;
+	width: 20%;
+}
+
+.two.playButton:hover, .three.playButton:hover {
+	opacity: .8;
 }
 
 .videoHead {
