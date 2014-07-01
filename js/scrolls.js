@@ -1,9 +1,16 @@
 $(document).ready(function() {
-	$('.topReturn').css({ left: '-1em'});
 
-	var checkPoint = $('#grid2').offset().top;
 	var duration = 500;
 	var $root = $('html, body');
+	var checkPoint = $('#grid2').offset().top;
+
+	$('a[href^="#"]').click(function(event) {
+		event.preventDefault();
+		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration, 'linear');
+		return false;
+	});
+	
+	$('.topReturn').css({ left: '-1em'});
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > checkPoint) {
@@ -19,10 +26,5 @@ $(document).ready(function() {
 		return false;
 	});
 
-	// $('.topReturn').hover(function() {
-	// 	$(this).stop(true, false).animate({left: -20}, duration);
-	// }, function() {
-	// 	$(this).stop(true, false).animate({left: -115}, duration);
-	// });
 
 });

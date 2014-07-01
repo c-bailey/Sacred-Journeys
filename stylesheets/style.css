@@ -35,7 +35,7 @@ body {
 }
 
 .premiere h1, .premiere p {
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 1.25em;/*20/16px*/
 	color: #fff3B9;
 }
@@ -45,11 +45,15 @@ body {
 }
 
 .premiere a, .premiere h2 {
-	font-weight: normal;
+	font-weight: 200;
 	font-size: 1.125em;
 	color: #fff;
 }
 
+.premiere p {
+	font-family: 'Source Sans Pro';
+	font-weight: 200;
+}
 
 .add-container h3 {
 	text-align: right;
@@ -149,16 +153,22 @@ A {
 	margin-top: -4%;
 }
 
-.vidInfo h2, .vidInfo p {
+.vidInfo h1, .vidInfo h2, .vidInfo p {
 	color: #e6e7e8;
 	font-size: 1.125em;
 }
 
-.vidInfo h2 {
+.vidInfo h1, .vidInfo h2 {
 	font-family: georgia;
 	font-weight: bold;
 	margin-bottom: 0;
 	margin-top: 0;
+	display: inline-block;
+}
+
+.vidInfo h2 {
+	font-weight: lighter;
+	margin-left: 0.2em;
 }
 
 .vidInfo p {
@@ -238,7 +248,6 @@ A {
 	float: left;
 	width: 31%;
 	margin-right: 1.69%;
-	text-transform: uppercase;
 }
 
 .cell {
@@ -256,7 +265,7 @@ A {
 }
 
 .cell:hover IMG {
-	opacity: .8;
+	opacity: .6;
 }
 
 .airdate {
@@ -264,19 +273,21 @@ A {
 	font-size: 1.375em;
 	color: #d1d2d4;
 	background-color: #58595b;
-	padding-top: .8em;
-	padding-bottom: .8em;
+	padding-top: .6em;
+	padding-bottom: .6em;
 	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
 }
 
 .airdate p {
 	margin: 0;
-	margin-left: 1%;
+	margin-left: 0.5em;
+	font-weight: 600;
 }
 
 .tune-in {
-	padding-bottom: 10%;
-	padding-top: 0;
+	padding-bottom: .5em;
+	padding-top: 0.5em;
 }
 
 .country, .pilgrimage, .time {
@@ -290,9 +301,10 @@ A {
 }
 
 .pilgrimage {
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 1.125em;
 	color: #fff;
+	text-transform: uppercase;
 }
 
 .country{
@@ -308,7 +320,7 @@ A {
 .time {
 	float: right;
 	font-family: 'Source Sans Pro';
-	font-weight: normal;
+	font-weight: 200;
 	font-size: 1.125em;
 	color: #fff;
 }
@@ -323,6 +335,7 @@ A {
 	width: 100%;
 	padding: 0;
 	font-size: 0;
+	overflow: hidden;
 }
 
 .main {
@@ -331,7 +344,10 @@ A {
 	z-index: 1;
 	bottom: 0;
 	margin: 0;
-	opacity: .8;
+	color: #fff;
+	-webkit-mask-image: -webkit-gradient(linear, left top, 
+    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.6)));
+
 }
 
 .sub {
@@ -371,12 +387,6 @@ A {
 	left:65.38%;
 }
 
-
-/*.subcell.playable:hover {
-	box-shadow: 5px 5px 2px #888888;
-	opacity: .9;
-}*/
-
 .subcell IMG {
 	position: relative;
 	width: 100%;
@@ -384,7 +394,6 @@ A {
 
 .videoCell {
 	height: 0;
-	padding-top: 25px;
 	padding-bottom: 68.5%;
 	margin-bottom: 10px;
 	/*position: relative;
@@ -407,7 +416,7 @@ A {
 .subcell.text {
 	width: 29%;
 	text-align: left;
-	padding: 1%;
+	padding: 1em;
 	font-size: 10pt;
 	font-family: 'Source Sans Pro';
 }
@@ -449,7 +458,7 @@ A {
 .subcell h4 {
 	font-family: Georgia;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 1.875em;
 	text-align: left;
 }
@@ -458,15 +467,16 @@ A {
 	font-family: Georgia;
 	font-size: 1.625em;
 	font-weight: normal;
+	color: #e6e7e8
 }
 
 .subcell h6 {
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 1.375em;
 }
 
 .subcell p {
-	font-weight: lighter;
+	font-weight: 200;
 	font-size: 1.25em;
 	line-height: 1.625em;
 	color: #bcbdc0
@@ -507,13 +517,21 @@ li {
 }
 
 span {
-	margin-left: 5%;
+	margin-left: 2em;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 0.875em;
 }
+
+span .seperator {
+	margin-left: 0.5em;
+	display: inline-block;
+}
+
 span a {
-	color: #bdac65
+	color: #bdac65;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 
 a:hover {
@@ -583,6 +601,26 @@ a:hover {
 		margin-top: -20%;
 	}
 }
+
+@media only screen and (max-width: 790px) {
+	.subcell h4 {
+		font-size: 1.75em;
+	}
+
+	.subcell h5 {
+		font-size: 1.5em;
+	}
+
+	.subcell h6 {
+		font-size: 1.25em;
+	}
+
+	.subcell p {
+		font-size: 1.125em;
+		line-height: 1.5em;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 
 	.premiere {
@@ -599,7 +637,7 @@ a:hover {
 		margin-top: -80px;
 	}
 
-	.videoContainer {
+	.videoContainer, .promoHolder {
 		width: 96%;
 		margin-left: 2%;
 		margin-bottom: 0;
@@ -609,7 +647,7 @@ a:hover {
 		width: 96%;
 		margin-left: 2%;
 		margin-right: 2%;
-		margin-top: -10%;
+		margin-top: 0;
 	}
 }
 
@@ -663,6 +701,10 @@ a:hover {
 		background-color: #58595b;
 	}
 
+	.details {
+		background-color: #000;
+	}
+
 	.main {
 		display: none;
 	}
@@ -677,7 +719,7 @@ a:hover {
 		width: 100%;
 		margin: 0;
 		margin-top: 5px;
-		margin-bottom: -15%;
+		margin-bottom: 0;
 	}
 
 	.subcell {
@@ -698,10 +740,6 @@ a:hover {
 		padding: 5%;
 	}
 
-	.subcell.playable:hover {
-		opacity: .7;
-	}
-
 	.footercell {
 		width: 20%;
 	}
@@ -713,16 +751,6 @@ a:hover {
 	.airdate {
 		text-align: center;
 	}
-
-	/*.time, .pilgrimage, .country {
-		display: block;
-		text-align: left;
-		width: 100%;
-	}
-
-	.country .web {
-		display: none;
-	}*/
 
     .web {
     	display: none;
