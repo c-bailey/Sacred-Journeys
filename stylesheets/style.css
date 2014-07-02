@@ -1,123 +1,49 @@
-* { -webkit-transform: none!important; -webkit-transition-property: none!important; -webkit-backface-visibility: none!important;}
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
+/*WHOLE PAGE STYLING*/
 
 body {
 	font-family: Georgia;
-	margin: 0;
-	padding: 0;
+	font-weight: 400;
 	background-color: #000;
 }
 
-
-.logo {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	z-index: 0;
+footer {
+	padding-top: 2em;
 	overflow: hidden;
-	display: block;
+	background-color: #fff;
 }
 
-.logo IMG {
-	position: relative;
-	width: 100%;
-}
-
-.premiere {
-	position: absolute;
-	top: 2em;
-	padding-left: 50%;
-	margin-left: -300px;
-}
-
-.premiere h1, .premiere h2, .premiere p {
-	display: inline;
-}
-
-.premiere h1, .premiere p {
-	font-weight: normal;
-	font-size: 1.25em;/*20/16px*/
-	color: #fff3B9;
-}
-
-.premiere h2, .add-container h3 {
-	font-family: 'Source Sans Pro';
-}
-
-.premiere a, .premiere h2 {
-	font-weight: 200;
-	font-size: 1.125em;
-	color: #fff;
-}
-
-.premiere p {
-	font-family: 'Source Sans Pro';
-	font-weight: 200;
-}
-
-.add-container h3 {
-	font-weight: 200;
-	text-align: right;
-	font-size: 0.75em;
-	margin-bottom: 0.4em;
-	color: #939598
-}
-
-.wholeContainer {
-	width: 100%;
-	max-width: 1024px;
-	margin: 0px auto;
-	overflow: hidden;
-}
-
-A {
+a {
 	text-decoration: none;
 }
 
-.topReturn {
-	text-align: center;
-	position: fixed;
-	width: 2.5em;
-	height: 1.5em;
-	left: -1em;
-	background-color: #E4E4E4;
-	z-index: 10;
-	border-radius: 0.5em;
-	padding: 0.2em;
+a:hover {
+	text-decoration: underline;
 }
 
-.arrow-up {
-	width: 0; 
-	height: 0; 
-	border-left: 0.6em solid transparent;
-	border-right: 0.6em solid transparent;
-	border-bottom: calc(1.2em*0.866) solid black;
-	z-index: 2;
-	margin-left: 1.1em;
-	margin-top: .2em;
+ul, li {
+	list-style-type: none;
 }
 
-.topContainer {
-	float: left;
-	width: 100%;
-	height: auto;
-	position:relative;
-	padding-top: 2%;
-	margin-top: -180px;
+.wholeContainer {
+	max-width: 1024px;
 	overflow: hidden;
+	margin: auto;
 }
 
-.promoHolder {
-	float: left;
-	position: relative;
-	width: calc(95% - 400px);
-	display: inline-block;
-	margin-left: 5.97%;
-	vertical-align: top;
-	overflow: hidden;
-	margin-bottom: 1em;
-}
+/*WIDTHS*/
+.wholeContainer, .topContainer, #grid2, .main, .details, .logo,
+.logo IMG, .cell IMG, .subcell IMG, .promoHolder IMG,
+#ad-mobile, .shop { width: 100%; }
 
+/*FONT SETTINGS*/
+.time, .subcell h6, .subcell p, .premiere h2, .premiere p, .vidInfo p.description,
+.add-container h3, .shop, footer, .airdate { font-family: 'Source Sans Pro' }
+
+/*WHOLE PAGE -- recurring classes*/
+/*VIDEO BUTTON*/
 .promoHolder .button, .subcell .button {
 	position: absolute;
 	width: 15%;
@@ -141,16 +67,93 @@ A {
 	opacity: 0.7;
 }
 
-.promoHolder IMG {
-	width: 100%;
+.mobile {
+	display: none;
+}
+
+.web {
+	display: block;
+}
+
+
+/*LOGO STYLING*/
+
+.logo, .logo IMG {
+	position: relative;
+}
+
+.premiere {
+	position: absolute;
+	top: 2.5em;
+	padding-left: 50%;
+	margin-left: -275px;
+}
+
+.premiere h1, .premiere h2, .premiere p {
+	display: inline;
+}
+
+.premiere h1, .premiere p {
+	font-size: 1.25em;
+	color: #fff3B9;
+}
+
+.premiere h2, .premiere p {
+	font-weight: 200;
+}
+
+.premiere h2, .premiere a {
+	font-size: 1.125em;
+	color: #fff;
+}
+
+/*TOP RETURN BUTTON*/
+.topReturn {
+	position: fixed;
+	width: 2.5em;
+	height: 1.5em;
+	left: -1em;
+	background-color: #E4E4E4;
+	z-index: 10;
+	border-radius: 0.5em;
+	padding: 0.2em;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 0.6em solid transparent;
+	border-right: 0.6em solid transparent;
+	border-bottom: calc(1.2em*0.866) solid black;
+	z-index: 2;
+	margin-left: 1.1em;
+	margin-top: .2em;
+}
+
+/*TOP CONTAINER STYLING*/
+.topContainer {
+	float: left;
+	position:relative;
+	margin-top: -170px;
+	overflow: hidden;
+}
+
+/*VIDEO CONTAINER*/
+
+.promoHolder {
+	float: left;
+	position: relative;
+	width: calc(95% - 400px);
+	display: inline-block;
+	margin-left: 5.97%;
+	vertical-align: top;
+	overflow: hidden;
+	margin-bottom: 1em;
 }
 
 .videoContainer {
 	position: relative;
 	padding-bottom: 56%;
-	margin: 0;
-	padding-left: 0;
-	padding-right: 0;
 	height: 0;
 	overflow: hidden;
 }
@@ -176,35 +179,25 @@ A {
 	font-size: 1.125em;
 }
 
-.vidInfo h1, .vidInfo h2 {
-	font-family: georgia;
+.vidInfo h1, .vidInfo h2, .vidInfo p.tagline {
 	font-weight: bold;
-	margin-bottom: 0;
-	margin-top: 0;
 	display: inline-block;
 }
 
 .vidInfo h2 {
-	font-weight: lighter;
 	margin-left: 0.2em;
 }
 
 .vidInfo p {
-	font-family: 'Source Sans Pro';
-	font-weight: lighter;
 	line-height: 1.5em;
 }
 
 .vidInfo p.tagline {
-	font-family: georgia;
-	font-weight: bold;
 	font-size: 1.25em;
-	margin-top: 0;
 }
 
 
-/*All add-block css below*/
-
+/*AD BLOCK*/
 .add-container {
 	top: 0;
 	width: 300px;
@@ -212,9 +205,17 @@ A {
 	padding-left: 1%;
 }
 
+.add-container h3 {
+	text-align: right;
+	font-size: 0.75em;
+	font-weight: 200;
+	margin-bottom: 0.4em;
+	color: #939598
+}
+
 #add-block {
 	position: static;
-	margin: 0 auto;
+	margin: auto;
 	margin-top: 1.5em;
 }
 
@@ -225,7 +226,6 @@ A {
 }
 
 #ad-mobile {
-	width: 100%;
 	float: left;
 	display: block;
 }
@@ -235,31 +235,23 @@ A {
       .js #add-block { display: inline-block; position: absolute; z-index: 1;}
     }
 
-/* end of add-block code*/
-
 .shop {
-	width: 100%;
 	background-color: #aaa;
 	padding-top: 20px;
 	margin-top: 1em;
 	padding-bottom:20px;
 	text-align: center;
-	font-family: 'Source Sans Pro';
 }
 
+/*MAIN GRID STYLING*/
 #grid {
 	position: relative;
 	width: 89.75%;
 	margin-left: 5.97%;
 	margin-right: 4.28%;
-	height: auto;
-/*	padding-left: 5%;
-	padding-right: 5%;*/
 	overflow: hidden;
 	margin-bottom: 2em;
 }
-
-
 
 .col {
 	position: relative;
@@ -277,38 +269,25 @@ A {
 	overflow: hidden;
 }
 
-.cell IMG {
-	width: 100%;
-	height: auto;
-}
-
 .cell:hover IMG {
 	opacity: .6;
 }
 
+/*MAIN GRID TEXT*/
 .airdate {
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 1.375em;
+	text-transform: uppercase;
 	color: #d1d2d4;
 	background-color: #58595b;
-	padding-top: .6em;
-	padding-bottom: .6em;
-	font-family: 'Source Sans Pro';
-	text-transform: uppercase;
 }
 
-.airdate p {
-	margin: 0;
-	margin-left: 0.5em;
-	font-weight: 600;
-}
-
-.tune-in {
-	padding-bottom: .5em;
+.airdate, .tune-in {
+	padding-bottom: 0.5em;
 	padding-top: 0.5em;
 }
 
-.country, .pilgrimage, .time {
+.country, .pilgrimage, .time, .country .web {
 	position: relative;
 	display: inline-block;
 }
@@ -318,55 +297,45 @@ A {
 	margin-right: .2em;
 }
 
-.pilgrimage {
-	font-weight: normal;
+.time, .pilgrimage {
 	font-size: 1.125em;
 	color: #fff;
+}
+
+.pilgrimage {
 	text-transform: uppercase;
 }
 
 .country{
-	font-weight: normal;
 	font-size: 1em;
 	color: #e6e7e8;
 }
 
-.country .web {
-	display: inline-block;
-}
-
 .time {
 	float: right;
-	font-family: 'Source Sans Pro';
 	font-weight: 200;
-	font-size: 1.125em;
-	color: #fff;
 }
 
+
+/*PILGRIMAGE SECTIONS STYLING*/
+
 #grid2 {
-	width: 100%;
 	background-color: #fff;
 }
 
 .details {
 	position: relative;
-	width: 100%;
 	padding: 0;
 	font-size: 0;
 	overflow: hidden;
 }
 
 .main {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	bottom: 0;
-	margin: 0;
-	color: #fff;
 	-webkit-mask-image: -webkit-gradient(linear, left top, 
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.6)));
-
 }
+
+/*SUB components*/
 
 .sub {
 	width: 89.75%;
@@ -375,7 +344,6 @@ A {
 	position: absolute;
 	bottom: 0;
 	z-index: 2;
-	padding: 0;
 	margin-bottom: 5%;
 	vertical-align: bottom;
 }
@@ -402,23 +370,16 @@ A {
 	left:65.38%;
 }
 
-.subcell IMG {
-	position: relative;
-	width: 100%;
-}
-
 .subcell.text {
 	width: 25%;
 	text-align: left;
 	padding: 2% 3%;
 	font-size: 10pt;
-	font-family: 'Source Sans Pro';
 }
 
 .subcell.text.playable {
 	padding: 0;
 	background-color: #3a3a3c;
-	font-family: georgia;
 }
 
 .videoHead {
@@ -429,38 +390,32 @@ A {
 	padding-right: 0;
 }
 
-.videoHead .title {
+.title {
 	font-weight: bold;
 	font-size: 1.125em;
 	color: #fff;
 	display: inline-block;
 }
 
-.videoHead .duration {
-	font-weight: normal;
+.duration {
 	font-size: 1em;
 	color: #d1d2d4;
 	display: inline-block;
 }
 
 .subcell h4, .subcell h5, .subcell h6 {
-	margin: 0;
 	margin-top: 0.5em;
 	color: #fff;
 }
 
 .subcell h4 {
-	font-family: Georgia;
 	text-transform: uppercase;
-	font-weight: normal;
 	font-size: 1.875em;
 	text-align: left;
 }
 
 .subcell h5 {
-	font-family: Georgia;
 	font-size: 1.625em;
-	font-weight: normal;
 	color: #e6e7e8
 }
 
@@ -479,39 +434,7 @@ A {
 	margin-bottom: 0;
 }
 
-footer {
-	padding-top: 3em;
-	width: 100%;
-	overflow: hidden;
-	background-color: #fff;
-	color: #000;
-	font-family: 'Source Sans Pro';
-}
-
-ul {
-	list-style-type: none;
-	padding-left: 0;
-}
-
-li {
-	list-style-type: none;
-}
-
-
-.footercell {
-	position: relative;
-	float: left;
-	width: 15%;
-	font-size: 10pt;
-	margin: 1%;
-}
-
-.footercell.funding {
-	width: 25%;
-	font-weight: normal;
-	font-size: 0.75em;
-	line-height: 0.9375em;
-}
+/* FOOTER STYLING*/
 
 span {
 	margin-left: 2em;
@@ -527,32 +450,33 @@ span .seperator {
 
 span a {
 	color: #bdac65;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+	margin: 0 0.5em;
 }
 
-a:hover {
-	text-decoration: underline;
+.footercell {
+	position: relative;
+	float: left;
+	width: 15%;
+	font-size: 10pt;
+	margin: 1%;
 }
 
-.mobile {
-	display: none;
-}
-
-.web {
-	display: block;
+.footercell.funding {
+	width: 25%;
+	font-size: 0.75em;
+	line-height: 0.9375em;
 }
 
 .footTitle {
 	margin-bottom: 1em;
 }
 
-
+/*BREAK POINT for top grid text*/
 @media only screen and (max-width: 895px) {
 
 	.time, .pilgrimage, .country {
 		display: block;
-		text-align: left;
+		float: left;
 		width: 100%;
 	}
 
@@ -561,6 +485,7 @@ a:hover {
 	}
 }
 
+/*BREAK POINT for subcell text*/
 @media only screen and (max-width: 790px) {
 	.subcell h4 {
 		font-size: 1.75em;
@@ -580,6 +505,7 @@ a:hover {
 	}
 }
 
+/*AD BLOCK removal*/
 @media only screen and (max-width: 767px) {
 
 	.premiere {
@@ -587,8 +513,6 @@ a:hover {
 		float: left;
 		text-align: center;
 		width: 100%;
-		padding: 0;
-		margin: 0;
 		margin-top: -150px;
 	}
 
@@ -596,19 +520,13 @@ a:hover {
 		margin-top: -80px;
 	}
 
-	.promoHolder {
+	.promoHolder, .vidInfo {
 		width: 96%;
 		margin-left: 2%;
-	}
-
-	.vidInfo {
-		width: 96%;
-		margin-left: 2%;
-		margin-right: 2%;
-		margin-top: 0;
 	}
 }
 
+/*BREAK POINT for subcell text*/
 @media only screen and (max-width: 655px) {
 	.subcell h4 {
 		font-size: 1.5em;
@@ -628,6 +546,7 @@ a:hover {
 	}
 }
 
+/*MOBILE TRANSFORM*/
 @media only screen and (max-width: 600px) {
 
 	.one, .two, .three {
@@ -678,9 +597,13 @@ a:hover {
 		background-color: #000;
 	}
 
-	.main {
+	.main, .web {
 		display: none;
 	}
+
+    .mobile {
+    	display: block;
+    }
 
 	.subcell h4 {
 		font-size: 1.875em;
@@ -734,17 +657,9 @@ a:hover {
 	.airdate {
 		text-align: center;
 	}
-
-    .web {
-    	display: none;
-    }
-
-    .mobile {
-    	display: block;
-    }
-
 }
 
+/*Premiere text breakpoint*/
 @media only screen and (max-width: 530px) {
 
 	.premiere h1 {
