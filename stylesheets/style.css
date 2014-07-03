@@ -179,7 +179,7 @@ ul, li {
 	font-size: 1.125em;
 }
 
-.vidInfo h1, .vidInfo h2, .vidInfo p.tagline {
+.vidInfo h1, .vidInfo h2, .vidInfo p.schedule {
 	font-weight: bold;
 	display: inline-block;
 }
@@ -192,8 +192,13 @@ ul, li {
 	line-height: 1.5em;
 }
 
-.vidInfo p.tagline {
+.vidInfo p.schedule {
 	font-size: 1.25em;
+	margin-top: 2em;
+}
+
+.vidInfo p a {
+	color: #fff3B9; 
 }
 
 
