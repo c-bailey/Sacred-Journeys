@@ -187,15 +187,18 @@ ul, li {
 
 .vidInfo h2 {
 	margin-left: 0.2em;
+	font-weight: 400;
 }
 
 .vidInfo p {
 	line-height: 1.5em;
+	font-weight: 300;
 }
 
 .vidInfo p.schedule {
 	font-size: 1.25em;
 	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .vidInfo p a {
@@ -299,7 +302,6 @@ ul, li {
 }
 
 .country, .pilgrimage{
-	float: left;
 	margin-right: .2em;
 }
 
@@ -318,7 +320,7 @@ ul, li {
 }
 
 .time {
-	float: right;
+	width: 100%;
 	font-weight: 200;
 }
 
@@ -477,8 +479,9 @@ span a {
 	margin-bottom: 1em;
 }
 
-/*BREAK POINT for top grid text*/
-@media only screen and (max-width: 895px) {
+
+/*BREAK POINT for subcell text*/
+@media only screen and (max-width: 790px) {
 
 	.time, .pilgrimage, .country {
 		display: block;
@@ -489,10 +492,7 @@ span a {
 	.country .web {
 		display: none;
 	}
-}
 
-/*BREAK POINT for subcell text*/
-@media only screen and (max-width: 790px) {
 	.subcell h4 {
 		font-size: 1.75em;
 	}
