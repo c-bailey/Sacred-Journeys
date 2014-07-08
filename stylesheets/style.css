@@ -224,7 +224,7 @@ ul, li {
 #add-block {
 	position: static;
 	margin: auto;
-	margin-top: 1.5em;
+	margin-top: 2.125em;
 }
 
 #add-block-placer {
@@ -327,7 +327,7 @@ ul, li {
 /*PILGRIMAGE SECTIONS STYLING*/
 
 #grid2 {
-	background-color: #fff;
+	background-color: #000;
 }
 
 .details {
