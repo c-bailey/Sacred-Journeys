@@ -7,6 +7,7 @@ body {
 	font-family: Georgia;
 	font-weight: 400;
 	background-color: #000;
+	-webkit-text-size-adjust: none;
 }
 
 footer {
@@ -122,6 +123,7 @@ ul, li {
 	width: 2.5em;
 	height: 1.5em;
 	left: -1em;
+	top: 20%;
 	background-color: #E4E4E4;
 	z-index: 10;
 	border-radius: 0.5em;
@@ -133,7 +135,7 @@ ul, li {
 	height: 0; 
 	border-left: 0.6em solid transparent;
 	border-right: 0.6em solid transparent;
-	border-bottom: calc(1.2em*0.866) solid black;
+	border-bottom: 1.039em solid black;
 	z-index: 2;
 	margin-left: 1.1em;
 	margin-top: .2em;
@@ -143,7 +145,7 @@ ul, li {
 .topContainer {
 	float: left;
 	position:relative;
-	margin-top: -170px;
+	margin-top: -150px;
 	overflow: hidden;
 }
 
@@ -259,6 +261,7 @@ ul, li {
 	margin-top: 1em;
 	padding-bottom:20px;
 	text-align: center;
+	display: none;
 }
 
 /*MAIN GRID STYLING*/
@@ -413,7 +416,7 @@ ul, li {
 }
 
 .title {
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 1.125em;
 	color: #fff;
 	display: inline-block;
@@ -460,10 +463,13 @@ ul, li {
 /* FOOTER STYLING*/
 
 span {
+	position: relative;
+	float: left;
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 0.875em;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
+	width: 100%;
 }
 
 span .seperator {
@@ -480,20 +486,25 @@ span a {
 	position: relative;
 	float: left;
 	width: 18%;
-	font-size: 10pt;
-	margin: 2em 2% 0 0;
+	margin-left: 2%;
+	margin-top: 1em;
 }
 
-.footercell.funding {
+.footercell.funding,.footercell.footTitle {
 	font-size: 0.75em;
 	line-height: 0.9375em;
 }
 
 .footercell.footTitle {
 	width: 15%;
+	color: #939598;
 }
 
-.footTitle {
+.footercell.footTitle .produced {
+	margin-bottom: 1em;
+}
+
+.funding .footTitle {
 	margin-bottom: 1em;
 }
 
@@ -527,6 +538,11 @@ span a {
 		font-size: 1.125em;
 		line-height: 1.5em;
 	}
+
+	.topContainer {
+		margin-top: -140px;
+	}
+
 }
 
 /*AD BLOCK removal*/
@@ -539,11 +555,11 @@ span a {
 		padding-left: 0;
 		margin-left: 0;
 		width: 100%;
-		margin-top: -150px;
+		margin-top: -170px;
 	}
 
 	.topContainer {
-		margin-top: -80px;
+		margin-top: -100px;
 	}
 
 	.promoHolder, .vidInfo {
@@ -577,12 +593,17 @@ span a {
 	}
 
 	.footercell.footTitle {
-		width: 35%;
+		width: 25%;
 	}
 
 	.footercell.funding {
 		width: 60%;
 	}
+
+	.topContainer {
+		margin-top: -80px;
+	}
+
 }
 
 /*MOBILE TRANSFORM*/
@@ -605,6 +626,10 @@ span a {
 
 	.premiere p {
 		display: none;
+	}
+
+	.premiere {
+		margin-top: -100;
 	}
 
 	.topContainer {
@@ -661,7 +686,7 @@ span a {
 
 	.subcell p {
 		font-size: 1.25em;
-		line-height: 1.625em;
+		line-height: 1.5em;
 	}
 
 	.sub {
