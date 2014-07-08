@@ -223,7 +223,7 @@ ul, li {
 .add-container {
 	top: 0;
 	width: 300px;
-	height: 365px;
+	height: 310px; /* 365 with shop ad */
 	padding-left: 1%;
 }
 
@@ -413,6 +413,7 @@ ul, li {
 	overflow: hidden;
 	padding: 5%;
 	padding-right: 0;
+	height: 3em;
 }
 
 .title {
@@ -711,6 +712,11 @@ span a {
 		margin-right: 0;
 		margin-left: 0;
 		padding: 5%;
+	}
+
+	.videoHead {
+		height: auto;
+		padding: 1em;
 	}
 
 	.airdate {
