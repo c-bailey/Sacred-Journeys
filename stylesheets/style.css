@@ -19,6 +19,10 @@ a {
 	text-decoration: none;
 }
 
+a img {
+	border: 0;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -86,11 +90,15 @@ ul, li {
 	position: absolute;
 	top: 2.5em;
 	padding-left: 50%;
-	margin-left: -286px;
+	margin-left: -259px;
 }
 
 .premiere h1, .premiere h2, .premiere p {
 	display: inline;
+}
+
+.premiere h1 {
+	font-weight: normal;
 }
 
 .premiere h1, .premiere p {
@@ -300,16 +308,9 @@ ul, li {
 	display: inline-block;
 }
 
-.country, .pilgrimage{
-	margin-right: .2em;
-}
-
-.time, .pilgrimage {
+.pilgrimage {
 	font-size: 1.125em;
 	color: #fff;
-}
-
-.pilgrimage {
 	text-transform: uppercase;
 }
 
@@ -321,6 +322,8 @@ ul, li {
 .time {
 	width: 100%;
 	font-weight: 200;
+	color: #d1d2d4;
+	font-size: 1em;
 }
 
 
@@ -338,8 +341,7 @@ ul, li {
 }
 
 .main {
-	-webkit-mask-image: -webkit-gradient(linear, left top, 
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.6)));
+	-webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(0,0,0,0)), color-stop(15%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1)));
 }
 
 /*SUB components*/
@@ -472,6 +474,10 @@ span a {
 	width: 25%;
 	font-size: 0.75em;
 	line-height: 0.9375em;
+}
+
+.footercell.sponsors {
+	float: right;
 }
 
 .footTitle {
@@ -688,4 +694,11 @@ span a {
 		margin-top: -120px;
 	}
 
+}
+
+@media only screen and (max-width: 400px) {
+
+	.premiere {
+		margin-top: -110px;
+	}
 }
