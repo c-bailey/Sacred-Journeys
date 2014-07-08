@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	$('a[href^="#"]').click(function(event) {
 		event.preventDefault();
-		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration, 'linear');
+		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration);
 		return false;
 	});
 	
@@ -20,11 +20,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.topReturn').click(function(event) {
-		event.preventDefault();
-		$root.animate({scrollTop:$('#grid').position().top}, duration);
-		return false;
-	});
+	// $('.topReturn').click(function(event) {
+	// 	event.preventDefault();
+	// 	$root.animate({scrollTop:$('#grid').position().top}, duration);
+	// 	return false;
+	// });
 
 
 });
