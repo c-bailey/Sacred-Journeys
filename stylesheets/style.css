@@ -87,7 +87,7 @@ ul, li {
 	position: absolute;
 	top: 2.5em;
 	padding-left: 50%;
-	margin-left: -275px;
+	margin-left: -286px;
 }
 
 .premiere h1, .premiere h2, .premiere p {
@@ -518,6 +518,8 @@ span a {
 		position: relative;
 		float: left;
 		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
 		width: 100%;
 		margin-top: -150px;
 	}
@@ -563,8 +565,11 @@ span a {
 
 	.premiere h2, .premiere h1 {
 		display: block;
-		text-align: center;
 		line-height: 0.75em;
+	}
+
+	.premiere h2 {
+		margin-top: .325em;
 	}
 
 	.premiere p {
