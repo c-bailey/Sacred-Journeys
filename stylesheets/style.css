@@ -11,6 +11,7 @@ body {
 
 footer {
 	padding: 2em;
+	padding-right: 1em;
 	overflow: hidden;
 	background-color: #fff;
 }
@@ -40,7 +41,7 @@ ul, li {
 /*WIDTHS*/
 .wholeContainer, .topContainer, #grid2, .main, .details, .logo,
 .logo IMG, .cell IMG, .subcell IMG, .promoHolder IMG,
-#ad-mobile, .shop { width: 100%; }
+#ad-mobile, .shop, .footercell IMG { width: 100%; }
 
 /*FONT SETTINGS*/
 .time, .subcell h6, .subcell p, .premiere h2, .premiere p, .vidInfo p.description,
@@ -193,8 +194,11 @@ ul, li {
 }
 
 .vidInfo h2 {
-	margin-left: 0.2em;
 	font-weight: 400;
+}
+
+.vidInfo h1 {
+	margin-right: 0.2em;
 }
 
 .vidInfo p {
@@ -237,8 +241,6 @@ ul, li {
 
 #add-block-placer {
 	display: none;
-	width: 300px;
-	height: 365px;
 }
 
 #ad-mobile {
@@ -441,6 +443,7 @@ ul, li {
 	line-height: 1.625em;
 	color: #bcbdc0;
 	margin-bottom: 0;
+	margin-top: 0.5em;
 }
 
 /* FOOTER STYLING*/
@@ -465,19 +468,18 @@ span a {
 .footercell {
 	position: relative;
 	float: left;
-	width: 15%;
+	width: 18%;
 	font-size: 10pt;
-	margin: 2em 1em 0 0;
+	margin: 2em 2% 0 0;
 }
 
 .footercell.funding {
-	width: 25%;
 	font-size: 0.75em;
 	line-height: 0.9375em;
 }
 
-.footercell.sponsors {
-	float: right;
+.footercell.footTitle {
+	width: 15%;
 }
 
 .footTitle {
@@ -556,6 +558,19 @@ span a {
 	.subcell p {
 		font-size: 1em;
 		line-height: 1.375em;
+	}
+
+	.footercell {
+		width: 30%;
+		margin-right: 2.5%;
+	}
+
+	.footercell.footTitle {
+		width: 35%;
+	}
+
+	.footercell.funding {
+		width: 60%;
 	}
 }
 
@@ -660,14 +675,6 @@ span a {
 		margin-right: 0;
 		margin-left: 0;
 		padding: 5%;
-	}
-
-	.footercell {
-		width: 20%;
-	}
-
-	.footercell.funding {
-		width: 40%;
 	}
 
 	.airdate {
