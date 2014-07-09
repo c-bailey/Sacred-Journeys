@@ -42,7 +42,7 @@ ul, li {
 /*WIDTHS*/
 .wholeContainer, .topContainer, #grid2, .main, .details, .logo,
 .logo IMG, .cell IMG, .subcell IMG, .promoHolder IMG,
-#ad-mobile, .shop, .footercell IMG { width: 100%; }
+#ad-mobile, .shop { width: 100%; }
 
 /*FONT SETTINGS*/
 .time, .subcell h6, .subcell p, .premiere h2, .premiere p, .vidInfo p.description,
@@ -92,7 +92,7 @@ ul, li {
 	position: absolute;
 	top: 2.5em;
 	padding-left: 50%;
-	margin-left: -259px;
+	margin-left: -176px; /* with local listing -259px; */
 }
 
 .premiere h1, .premiere h2, .premiere p {
@@ -110,6 +110,7 @@ ul, li {
 
 .premiere h2, .premiere p {
 	font-weight: 200;
+	display: none;
 }
 
 .premiere h2, .premiere a {
@@ -223,7 +224,7 @@ ul, li {
 .add-container {
 	top: 0;
 	width: 300px;
-	height: 310px; /* 365 with shop ad */
+	height: 365px;
 	padding-left: 1%;
 }
 
@@ -486,9 +487,15 @@ span a {
 .footercell {
 	position: relative;
 	float: left;
-	width: 18%;
+	width: 20%;
 	margin-left: 2%;
 	margin-top: 1em;
+}
+
+.footercell IMG {
+	width: 100%;
+	max-width: 120px;
+	max-height: 50px;
 }
 
 .footercell.funding,.footercell.footTitle {
@@ -499,6 +506,7 @@ span a {
 .footercell.footTitle {
 	width: 15%;
 	color: #939598;
+	margin-left: 0;
 }
 
 .footercell.footTitle .produced {
@@ -589,7 +597,7 @@ span a {
 	}
 
 	.footercell {
-		width: 30%;
+		width: 40%;
 		margin-right: 2.5%;
 	}
 
@@ -623,6 +631,7 @@ span a {
 
 	.premiere h2 {
 		margin-top: .325em;
+		display: none;
 	}
 
 	.premiere p {
