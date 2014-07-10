@@ -488,6 +488,9 @@ span a {
 
 .footercell IMG {
 	height: 50px;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .footercell.footTitle IMG {
