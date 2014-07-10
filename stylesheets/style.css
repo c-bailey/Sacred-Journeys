@@ -148,6 +148,7 @@ ul, li {
 	position:relative;
 	margin-top: -150px;
 	overflow: hidden;
+	margin-bottom: 1em;
 }
 
 /*VIDEO CONTAINER*/
@@ -186,12 +187,12 @@ ul, li {
 	overflow: hidden;
 }
 
-.vidInfo h1, .vidInfo h2, .vidInfo p {
+.vidInfo h1, .vidInfo h2, .vidInfo p, #schedule {
 	color: #e6e7e8;
 	font-size: 1.125em;
 }
 
-.vidInfo h1, .vidInfo h2, .vidInfo p.schedule {
+.vidInfo h1, .vidInfo h2, #schedule {
 	font-weight: bold;
 	display: inline-block;
 }
@@ -204,15 +205,18 @@ ul, li {
 	margin-right: 0.2em;
 }
 
-.vidInfo p {
+.vidInfo p, #schedule {
 	line-height: 1.5em;
 	font-weight: 300;
 }
 
-.vidInfo p.schedule {
+#schedule {
+	position: relative;
+	float: left;
 	font-size: 1.25em;
-	margin-top: 2em;
+	margin-top: 1em;
 	margin-bottom: 1em;
+	width: 100%;
 }
 
 .vidInfo p a {
@@ -257,12 +261,8 @@ ul, li {
     }
 
 .shop {
-	background-color: #aaa;
-	padding-top: 20px;
 	margin-top: 1em;
-	padding-bottom:20px;
 	text-align: center;
-	display: none;
 }
 
 /*MAIN GRID STYLING*/
@@ -414,7 +414,6 @@ ul, li {
 	overflow: hidden;
 	padding: 5%;
 	padding-right: 0;
-	height: 3em;
 }
 
 .title {
@@ -505,7 +504,6 @@ span a {
 
 .footercell.footTitle {
 	width: 15%;
-	color: #939598;
 	margin-left: 0;
 }
 
@@ -517,6 +515,26 @@ span a {
 	margin-bottom: 1em;
 }
 
+
+@media only screen and (max-width: 870px) {
+
+	.videoHead {
+		height: 3em;
+	}
+
+	.videoHead:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.title {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
 
 /*BREAK POINT for subcell text*/
 @media only screen and (max-width: 790px) {

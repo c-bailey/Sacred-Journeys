@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$('a[href^="#"]').click(function(event) {
 		event.preventDefault();
 		$root.animate({scrollTop:$( $(this).attr('href')).position().top}, duration);
+		console.log($(this).attr('href'))
 		return false;
 	});
 	
