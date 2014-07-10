@@ -257,7 +257,7 @@ ul, li {
 
 @media only screen and (min-width: 768px) {
       .js #add-block-placer { display: inline; float: right; margin-right: 5%; vertical-align: top; }
-      .js #add-block { display: inline-block; position: absolute; z-index: 1;}
+      .js #add-block { display: inline-block; position: absolute; top:309px; left: 0; z-index: 1;}
     }
 
 .shop {

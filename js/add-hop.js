@@ -1,5 +1,3 @@
-
-
 (function(ah, $){
 
   var _win = ah.window,
@@ -18,12 +16,12 @@
     _placeholderId = _addBlock.getAttribute( 'data-placeholder' ),
     _placeholder = _doc.getElementById( _placeholderId );
 
-  // bail if no placeholder is found
-  if (!_placeholder) {
-      _addBlock.style.position = 'static';
-      console.log('could not find a placeholder for the addblock.');
-      return;
-  }
+    // bail if no placeholder is found
+    if (!_placeholder) {
+        _addBlock.style.position = 'static';
+        console.log('could not find a placeholder for the addblock.');
+        return;
+    }
 
     // indicate js support, if not already indicated
     if ((' ' + _doc.body.className + ' ').indexOf(' js ') == -1) { _doc.body.className+=' js'; }
@@ -35,7 +33,8 @@
     _diffTop = 54; //_ancestorOffsets.diffTop;
 
     // trigger add hop on page load
-    hopAddBlock();
+    var startTop = hopAddBlock();
+    _addBlock.style.top = startTop + 54 + 'px';
 
     // trigger add hop on page resize (todo: throttle)
     $(window).resize( hopAddBlock );
@@ -54,16 +53,19 @@
     var curStyle = (_placeholder) ? getRenderedStyle( _placeholder, 'display' ) : null,
         pTop = 0,
         pLeft = 0;
+        
 
     if ( curStyle != 'none' && _placeholder) {
         // get placeholder position
         pos = findPos( _placeholder, _diffLeft, _diffTop );
         pLeft = pos.left;
         pTop = pos.top;
+        console.log(pTop);
 
         // move add-block there
         _addBlock.style.top = pTop + 'px';
         _addBlock.style.left = pLeft + 'px';
+        return (pTop)
     }
   }
 
