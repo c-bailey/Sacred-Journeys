@@ -585,7 +585,7 @@ span a {
 		padding-left: 0;
 		margin-left: 0;
 		width: 100%;
-		margin-top: -170px;
+		margin-top: -180px;
 	}
 
 	.topContainer {
@@ -621,6 +621,10 @@ span a {
 		margin-right: 2.5%;
 	}
 
+	.premiere {
+		margin-top: -160px;
+	}
+
 	.topContainer {
 		margin-top: -80px;
 	}
@@ -651,7 +655,7 @@ span a {
 	}
 
 	.premiere {
-		margin-top: -100;
+		margin-top: -140px;
 	}
 
 	.topContainer {
@@ -769,6 +773,6 @@ span a {
 @media only screen and (max-width: 400px) {
 
 	.premiere {
-		margin-top: -110px;
+		margin-top: -100px;
 	}
 }
