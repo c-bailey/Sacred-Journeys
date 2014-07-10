@@ -409,9 +409,6 @@ ul, li {
 }
 
 .videoHead {
-	position: relative;
-	float: left;
-	overflow: hidden;
 	padding: 5%;
 	padding-right: 0;
 }
@@ -486,25 +483,27 @@ span a {
 .footercell {
 	position: relative;
 	float: left;
-	width: 20%;
-	margin-left: 2%;
 	margin-top: 1em;
+	margin-left: 1%;
 }
 
-.footercell IMG {
+.footercell.footTitle IMG, .footercell.sponsors IMG {
 	width: 100%;
-	max-width: 120px;
-	max-height: 50px;
 }
 
-.footercell.funding,.footercell.footTitle {
+.footercell.sponsors {
+	width: 15%;
+}
+
+.footercell.funding, .footercell.footTitle {
 	font-size: 0.75em;
 	line-height: 0.9375em;
+	margin-left: 2%;
 }
 
 .footercell.footTitle {
-	width: 15%;
 	margin-left: 0;
+	width: 20%;
 }
 
 .footercell.footTitle .produced {
@@ -527,6 +526,7 @@ span a {
 		display: inline-block;
 		height: 100%;
 		vertical-align: middle;
+		width: 1px;
 	}
 
 	.title {
