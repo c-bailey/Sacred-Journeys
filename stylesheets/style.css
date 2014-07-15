@@ -56,8 +56,12 @@ ul, li {
 	left: 50%;
 	top: 50%;
 	margin-left: -35px;
-	margin-top: -40px;
+	margin-top: -25px;
 	border-radius: 10%;
+}
+
+.subcell .button {
+	margin-top: -40px;
 }
 
 .buttonZone {
