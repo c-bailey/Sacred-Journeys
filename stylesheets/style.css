@@ -8,6 +8,7 @@ body {
 	font-weight: 400;
 	background-color: #000;
 	-webkit-text-size-adjust: none;
+	–ms-text-size-adjust: none;
 }
 
 footer {
