@@ -381,6 +381,10 @@ ul, li {
 	background-color: #414141;
 }
 
+.spacer {
+	font-size: 0;
+}
+
 .one, .two, .three {
 	position: absolute;
 	bottom: 0;
