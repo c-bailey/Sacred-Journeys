@@ -499,6 +499,8 @@ span a {
 	height: 50px;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 
@@ -509,6 +511,7 @@ span a {
 .footercell.sponsors IMG {
 	height: 25px;
 	display: block;
+	margin-bottom: 0.3em;
 }
 
 .footercell.funding, .footercell.footTitle {
@@ -748,7 +751,8 @@ span a {
 
 	.subcell {
 		width: 100%;
-		margin-top: 15px;
+		margin-bottom: 7.5px;
+		margin-top: 7.5px;
 	}
 
 	.subcell .button {
@@ -795,6 +799,11 @@ span a {
 
 	.premiere {
 		margin-top: -120px;
+	}
+
+	.footercell.lower {
+	margin-top: 1em;
+	margin-bottom: 0;
 	}
 
 }
