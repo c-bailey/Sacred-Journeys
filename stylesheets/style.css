@@ -97,7 +97,7 @@ ul, li {
 	position: absolute;
 	top: 2.5em;
 	padding-left: 50%;
-	margin-left: -176px; /* with local listing -259px; */
+	margin-left: -259px; /* without local listing -176px; */
 }
 
 .premiere h1, .premiere h2, .premiere p {
@@ -115,7 +115,6 @@ ul, li {
 
 .premiere h2, .premiere p {
 	font-weight: 200;
-	display: none;
 }
 
 .premiere h2, .premiere a {
@@ -816,5 +815,3 @@ span a {
 	}
 
 }
-
-
