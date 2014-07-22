@@ -1,0 +1,32 @@
+.schedule_module {
+	float: left;
+	position: relative;
+	width: calc(97% - 400px);
+	display: inline-block;
+	margin-left: 3%;
+	vertical-align: top;
+	overflow: hidden;
+	margin-bottom: 1em;
+	min-width: 445px;
+	margin-right: 3%;
+}
+
+#add-block {
+	margin-top: 0;
+}
+
+@media only screen and (min-width: 866px) {
+      #ad-unit { display: inline; float: right; margin-right: 5%; vertical-align: top; }
+      .js #add-block { display: inline-block; position: absolute; top:309px; left: 0; z-index: 1;}
+    }
+
+@media only screen and (max-width: 865px) {
+
+	.schedule_module {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	#ad-unit {float: none; width: 100%; display: inline-block; text-align: center;}
+}
