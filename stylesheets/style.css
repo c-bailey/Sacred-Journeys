@@ -251,7 +251,7 @@ ul, li {
 	margin-top: 2.125em;
 }
 
-#add-block-placer {
+#add-housing-unit {
 	display: none;
 }
 
@@ -261,7 +261,7 @@ ul, li {
 }
 
 @media only screen and (min-width: 768px) {
-      .js #add-block-placer { display: inline; float: right; margin-right: 5%; vertical-align: top; }
+      .js #add-housing-unit { display: inline; float: right; margin-right: 5%; vertical-align: top; }
       .js #add-block { display: inline-block; position: absolute; top:309px; left: 0; z-index: 1;}
     }
 
