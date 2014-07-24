@@ -126,6 +126,7 @@ ul, li {
 
 /*TOP RETURN BUTTON*/
 .topReturn {
+	display: none;
 	position: fixed;
 	width: 2.5em;
 	height: 1.5em;
