@@ -60,7 +60,6 @@
         pos = findPos( _placeholder, _diffLeft, _diffTop );
         pLeft = pos.left;
         pTop = pos.top;
-        console.log(pTop);
 
         // move add-block there
         _addBlock.style.top = pTop + 'px';
@@ -86,7 +85,6 @@
         } while ( elt = elt.offsetParent );
     return {'left': curLeft - diffLeft, 'top': curTop - diffTop};
     }
-    console.log(_placeholderId);
   }
 
   // Return sum of offsets of absolutely or relatively positioned ancestors to the given element

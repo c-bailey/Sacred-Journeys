@@ -3,6 +3,8 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
 /*WHOLE PAGE STYLING*/
 
+
+
 body {
 	font-family: Georgia;
 	font-weight: 400;
@@ -35,7 +37,7 @@ ul, li {
 }
 
 .wholeContainer {
-	max-width: 1024px;
+	max-width: 64em; /*1024 px*/
 	overflow: hidden;
 	margin: auto;
 }
@@ -53,16 +55,16 @@ ul, li {
 /*VIDEO BUTTON*/
 .promoHolder .button, .subcell .button {
 	position: absolute;
-	width: 70px;
+	width: 4.375em;
 	left: 50%;
 	top: 50%;
-	margin-left: -35px;
-	margin-top: -25px;
+	margin-left: -2.188em;
+	margin-top: -1.563em;
 	border-radius: 10%;
 }
 
 .subcell .button {
-	margin-top: -40px;
+	margin-top: -2.5em;
 }
 
 .buttonZone {
@@ -97,7 +99,7 @@ ul, li {
 	position: absolute;
 	top: 2.5em;
 	padding-left: 50%;
-	margin-left: -259px; /* without local listing -176px; */
+	margin-left: -16.188em; /* without local listing -176px; */
 }
 
 .premiere h1, .premiere h2, .premiere p {
@@ -150,7 +152,7 @@ ul, li {
 .topContainer {
 	float: left;
 	position:relative;
-	margin-top: -150px;
+	margin-top: -9.375em;
 	overflow: hidden;
 	margin-bottom: 1em;
 }
@@ -259,7 +261,8 @@ ul, li {
 	display: block;
 }
 
-@media only screen and (min-width: 768px) {
+/* @ 768px */
+@media only screen and (min-width: 48em) {
       .js #add-housing-unit { display: inline; float: right; margin-right: 5%; vertical-align: top; }
       .js #add-block { display: inline-block; position: absolute; top:309px; left: 0; z-index: 1;}
     }
@@ -496,7 +499,7 @@ span a {
 }
 
 .footercell IMG {
-	height: 50px;
+	height: 3.125em;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
@@ -505,11 +508,11 @@ span a {
 }
 
 .footercell.footTitle IMG {
-	height: 25px;
+	height: 1.563em;
 }
 
 .footercell.sponsors IMG {
-	height: 25px;
+	height: 1.563em;
 	display: block;
 	margin-bottom: 0.3em;
 }
@@ -538,11 +541,11 @@ span a {
 
 .footercell.lower {
 	margin-top: 2.125em;
-	margin-bottom: 34px;
+	margin-bottom: 2.125em;
 }
 
-
-@media only screen and (max-width: 905px) {
+/* @ 905px */
+@media only screen and (max-width: 56.563em) {
 
 	.videoHead {
 		height: 3em;
@@ -562,13 +565,13 @@ span a {
 	}
 
 	.subcell .button {
-		margin-top: -55px;
+		margin-top: 3.438em;
 	}
 
 }
 
-/*BREAK POINT for subcell text*/
-@media only screen and (max-width: 790px) {
+/*BREAK POINT for subcell text @ 790px */
+@media only screen and (max-width: 49.375em) {
 
 	.time, .pilgrimage, .country {
 		display: block;
@@ -598,13 +601,13 @@ span a {
 	}
 
 	.topContainer {
-		margin-top: -140px;
+		margin-top: 8.750em;
 	}
 
 }
 
-/*AD BLOCK removal*/
-@media only screen and (max-width: 767px) {
+/*AD BLOCK removal @ 767 px*/
+@media only screen and (max-width: 47.938em) {
 
 	.premiere {
 		position: relative;
@@ -613,11 +616,11 @@ span a {
 		padding-left: 0;
 		margin-left: 0;
 		width: 100%;
-		margin-top: -180px;
+		margin-top: -11.250em;
 	}
 
 	.topContainer {
-		margin-top: -100px;
+		margin-top: -6.250em;
 	}
 
 	.promoHolder, .vidInfo {
@@ -626,8 +629,8 @@ span a {
 	}
 }
 
-/*BREAK POINT for subcell text*/
-@media only screen and (max-width: 655px) {
+/*BREAK POINT for subcell text 655px*/
+@media only screen and (max-width: 40.938em) {
 	.subcell h4 {
 		font-size: 1.5em;
 	}
@@ -650,17 +653,17 @@ span a {
 	}
 
 	.premiere {
-		margin-top: -160px;
+		margin-top: -10em;
 	}
 
 	.topContainer {
-		margin-top: -80px;
+		margin-top: -5em;
 	}
 
 }
 
-/*MOBILE TRANSFORM*/
-@media only screen and (max-width: 600px) {
+/*MOBILE TRANSFORM 600px */
+@media only screen and (max-width: 37.5em) {
 
 	.one, .two, .three {
 		position: relative;
@@ -675,7 +678,6 @@ span a {
 
 	.premiere h2 {
 		margin-top: .325em;
-		display: none;
 	}
 
 	.premiere p {
@@ -683,11 +685,11 @@ span a {
 	}
 
 	.premiere {
-		margin-top: -140px;
+		margin-top: -8.750em;
 	}
 
 	.topContainer {
-		margin-top: -50px;
+		margin-top: -3.125em;
 	}
 
 	#grid {
@@ -751,12 +753,11 @@ span a {
 
 	.subcell {
 		width: 100%;
-		margin-bottom: 7.5px;
-		margin-top: 7.5px;
+		margin: 0.469em 0;
 	}
 
 	.subcell .button {
-		margin-top: -45px;
+		margin-top: -2.813em;
 	}
 
 	.subcell.text.playable {
@@ -782,8 +783,8 @@ span a {
 	}
 }
 
-/*Premiere text breakpoint*/
-@media only screen and (max-width: 530px) {
+/*Premiere text breakpoint 530px */
+@media only screen and (max-width: 33.125em) {
 
 	.premiere h1 {
 		font-size: 1em;
@@ -794,11 +795,11 @@ span a {
 	}
 
 	.topContainer {
-		margin-top: -20px;
+		margin-top: -1.25em;
 	}
 
 	.premiere {
-		margin-top: -120px;
+		margin-top: -7.5em;
 	}
 
 	.footercell.lower {
@@ -808,10 +809,15 @@ span a {
 
 }
 
-@media only screen and (max-width: 400px) {
+/* @ 400px */
+@media only screen and (max-width: 25em) {
 
 	.premiere {
-		margin-top: -100px;
+		margin-top: -6.25em;
 	}
 
 }
+
+
+
+
