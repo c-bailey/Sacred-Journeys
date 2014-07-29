@@ -10,7 +10,6 @@ body {
 	font-weight: 400;
 	background-color: #000;
 	-webkit-text-size-adjust: none;
-	–ms-text-size-adjust: none;
 }
 
 footer {
@@ -163,6 +162,7 @@ ul, li {
 .promoHolder {
 	float: left;
 	position: relative;
+	width: 55%; /*back up*/
 	width: calc(95% - 400px);
 	display: inline-block;
 	margin-left: 5.97%;
@@ -189,6 +189,7 @@ ul, li {
 .vidInfo {
 	float: left;
 	position: relative;
+	width: 55%; /*back up*/
 	width: calc(95% - 400px);
 	margin-left: 5.97%;
 	overflow: hidden;
@@ -501,11 +502,6 @@ span a {
 
 .footercell IMG {
 	height: 3.125em;
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	filter: grayscale(100%);
 }
 
 .footercell.footTitle IMG {
@@ -545,6 +541,16 @@ span a {
 	margin-bottom: 2.125em;
 }
 
+/* @ 940 */
+@media only screen and (max-width: 58.75em) {
+
+	.promoHolder, .vidInfo {
+		width: 50%; /*back up*/
+		width: calc(95% - 400px);
+	}
+}
+
+
 /* @ 905px */
 @media only screen and (max-width: 56.563em) {
 
@@ -569,6 +575,15 @@ span a {
 		margin-top: 3.438em;
 	}
 
+}
+
+/* @ 830 */
+@media only screen and (max-width: 52.5em) {
+
+	.promoHolder, .vidInfo {
+		width: 45%; /*back up*/
+		width: calc(95% - 400px);
+	}
 }
 
 /*BREAK POINT for subcell text @ 790px */
@@ -602,7 +617,7 @@ span a {
 	}
 
 	.topContainer {
-		margin-top: 8.750em;
+		margin-top: -8.750em;
 	}
 
 }

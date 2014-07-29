@@ -22,11 +22,4 @@ $(document).ready(function() {
 		}
 	});
 
-	// $('.topReturn').click(function(event) {
-	// 	event.preventDefault();
-	// 	$root.animate({scrollTop:$('#grid').position().top}, duration);
-	// 	return false;
-	// });
-
-
 });

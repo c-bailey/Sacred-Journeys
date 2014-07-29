@@ -12,15 +12,123 @@
 }
 
 @media only screen and (max-width: 800px) {
+
 	.wholeContainer {
 		max-width: 480px;
 	}
 
 	@-ms-viewport { width: 480px;}
 
-	.wholeContainer {
-		margin-top: 9em;
+	/*PBS HEADER START
+
+	/* line 151, ../sass/header.scss */
+	#pbs_dh_nav #pbs_btn_dropdown {
+		display: block;
+		float: right;
+		position: relative;
+		font-size: 1em;
+		padding: 18px 35px 19px 20px;
 	}
+	/* line 161, ../sass/header.scss */
+	#pbs_dh_nav #pbs_btn_dropdown:hover {
+		text-decoration: none;
+	}
+	/* line 165, ../sass/header.scss */
+	#pbs_dh_nav #pbs_btn_dropdown:after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 9px;
+		position: absolute;
+		background: url(../img/home_sprite_gc.png) 0 -9px no-repeat;
+		-webkit-background-size: 19px 37px;
+		-moz-background-size: 19px 37px;
+		-o-background-size: 19px 37px;
+		background-size: 19px 37px;
+		top: 23px;
+		right: 10px;
+	}
+	/* line 177, ../sass/header.scss */
+	#pbs_dh_nav #pbs_btn_dropdown.active {
+		background: #d9d9d9;
+	}
+
+
+	/* line 188, ../sass/header.scss */
+	#pbs_dh_nav #pbs_lens {
+		margin-left: 0;
+	}
+
+	/* line 220, ../sass/header.scss */
+	#pbs_dh_nav ul {
+		display: none;
+	}
+	/* line 225, ../sass/header.scss */
+	#pbs_dh_nav ul.active {
+		display: block;
+		background: #d9d9d9;
+		position: absolute;
+		z-index: 11;
+		right: 52px;
+		top: 53px;
+		text-align: right;
+		padding: 0 0 8px 0;
+	}
+	/* line 235, ../sass/header.scss */
+	#pbs_dh_nav ul.active li {
+		float: none;
+		margin: 0;
+	}
+	/* line 239, ../sass/header.scss */
+	#pbs_dh_nav ul.active li:first-child {
+		display: none;
+	}
+	/* line 242, ../sass/header.scss */
+	#pbs_dh_nav ul.active li:nth-child(2) {
+		display: block;
+	}
+	/* line 246, ../sass/header.scss */
+	#pbs_dh_nav ul.active li a {
+		font-size: 1em;
+		padding: 14px 39px 9px 0;
+		width: 201px;
+	}
+
+	/* line 306, ../sass/header.scss */
+	#pbs_dh_search {
+		width: 297px;
+		height: 100px;
+		bottom: -100px;
+	}
+	/* line 395, ../sass/header.scss */
+	#pbs_dh_search #pbs_distribution_search_box {
+		width: 257px;
+		margin: 0 0 9px 0;
+	}
+	/* line 399, ../sass/header.scss */
+	#pbs_dh_search .search_btn {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	/* line 403, ../sass/header.scss */
+	#pbs_dh_search #local_search_btn {
+		margin-right: 7px;
+	}
+	/* line 406, ../sass/header.scss */
+	#pbs_dh_search #global_search_btn {
+		margin-right: 0;
+	}
+
+
+
+	/* line 151, ../sass/header.scss */
+	#pbs_dh_nav #pbs_btn_dropdown {
+		font-size: 0.9375em;
+		padding: 19px 35px 19px 20px;
+	}
+
+
+/* PBS HEADER DONE */
 
 	/*790*/
 	.time, .pilgrimage, .country {
@@ -109,9 +217,9 @@
 		display: none;
 	}
 
-    .mobile {
-    	display: block;
-    }
+		.mobile {
+			display: block;
+		}
 
 	.subcell h4 {
 		font-size: 1.875em;
