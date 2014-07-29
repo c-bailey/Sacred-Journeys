@@ -13,10 +13,6 @@
 
 @media only screen and (max-width: 800px) {
 
-	.wholeContainer {
-		max-width: 480px;
-	}
-
 	@-ms-viewport { width: 480px;}
 
 	/*PBS HEADER START
@@ -302,10 +298,6 @@
 
 @media only screen and (max-width: 480px) {
 	@-ms-viewport { width: 320px;}
-
-	.wholeContainer {
-		margin-top: 0;
-	}
 
 	.topContainer {
 		margin-top: -1.25em;
