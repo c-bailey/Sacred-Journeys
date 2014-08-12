@@ -54,16 +54,16 @@ ul, li {
 /*VIDEO BUTTON*/
 .promoHolder .button, .subcell .button {
 	position: absolute;
-	width: 4.375em;
+	width: 70px;
 	left: 50%;
 	top: 50%;
-	margin-left: -2.188em;
-	margin-top: -1.563em;
+	margin-left: -35px;
+	margin-top: -25px;
 	border-radius: 10%;
 }
 
 .subcell .button {
-	margin-top: -2.5em;
+	margin-top: -40px;
 }
 
 .buttonZone {
@@ -97,8 +97,9 @@ ul, li {
 .premiere {
 	position: absolute;
 	top: 2.5em;
-	padding-left: 50%;
-	margin-left: -16.188em; /* without local listing -176px; */
+	left: 0;
+	right: 0;
+	text-align: center;
 }
 
 .premiere h1, .premiere h2, .premiere p {
@@ -572,7 +573,7 @@ span a {
 	}
 
 	.subcell .button {
-		margin-top: 3.438em;
+		margin-top: -55px;
 	}
 
 }
@@ -773,7 +774,7 @@ span a {
 	}
 
 	.subcell .button {
-		margin-top: -2.813em;
+		margin-top: -45px;
 	}
 
 	.subcell.text.playable {
